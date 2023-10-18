@@ -1,0 +1,12 @@
+.home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  margin: 5rem 0;
+
+  h1 {
+    font-weight: normal;
+    font-size: 2rem;
+  }
+}

@@ -1,0 +1,11 @@
+# Web Scrapper
+/scrapper/something
+
+# AI Bot
+/bot/something
+
+# Website
+/website/node_modules
+/website/.next
+/website/.env
+/website/.env*.local
