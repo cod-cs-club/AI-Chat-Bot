@@ -2,11 +2,10 @@
   "name": "scraaaaape-gang",
   "version": "1.0.0",
   "description": "",
-  "main": "server.js",
+  "main": "src/index.js",
   "type": "module",
   "scripts": {
-    "test": "start",
-    "start": "node server.js"
+    "start": "node ."
   },
   "author": "",
   "license": "ISC",
