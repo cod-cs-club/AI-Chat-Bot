@@ -1,6 +1,10 @@
 import fetch from 'node-fetch'
 import fs from 'fs'
 import cheerio from 'cheerio'
+import 'colors'
+
+console.clear()
+console.log('Starting scraper...'.gray)
 
 const baseUrl = 'https://www.cod.edu'
 const allLinks = new Set()
@@ -20,9 +24,17 @@ const BLACKLIST_MATCHES = [
   // 'library.cod.edu'
 ]
 
+const stats = {
+  linksCrawled: 0,
+  linksSaved: 0,
+  linksSkipped: 0,
+}
+
 async function scrape(url, retry) {
   try {
     // console.log(`Fetching ${url}...`)
+    stats.linksCrawled++
+
     const res = await fetch(url, { rejectUnauthorized: false })
     const html = await res.text()
     const $ = cheerio.load(html)
@@ -58,23 +70,41 @@ async function scrape(url, retry) {
         if (!allLinks.has(link)) {
           allLinks.add(link)
           fs.appendFile('links.txt', link + '\n', (err) => {})
-          scrape(link, 1000)
+          stats.linksSaved++
+          scrape(link, 1)
         }
       } catch (error) {
         console.log('Not a link: ' + link)
+        stats.linksSkipped++
       }
     })
   } catch (err) {
     // console.error(err) // errors confusing, so commented out
     setTimeout(() => {
-      if (retry < 32000) {
-        scrape(url, retry * 2)
+      if (retrySeconds < 32) {
+        scrape(url, retrySeconds * 2)
         return
       }
       console.log('too many retries, skipping link.')
-    }, retry) //wait 5 seconds and retry if there is an error
+    }, retrySeconds * 1000)
   }
 }
 
-scrape(baseUrl,1000)
-scrape('https://www.cod.edu/student_life/resources/counseling/pdf/student_planning/student-planning-as-21-23.pdf', 1000)
+scrape(baseUrl,1)
+scrape('https://www.cod.edu/student_life/resources/counseling/pdf/student_planning/student-planning-as-21-23.pdf', 1)
+
+// Prints status message
+function printStats() {
+  process.stdout.clearLine()
+  process.stdout.cursorTo(0)
+  process.stdout.write(
+    'Scraping...'.gray +
+    ` ${stats.linksCrawled} crawled`.cyan +
+    ` ${stats.linksSaved} saved`.green +
+    ` ${stats.linksSkipped} skipped`.yellow
+  )
+  process.stdout.cursorTo(0)
+}
+
+// Print status 20 times per second
+setInterval(printStats, 50)
