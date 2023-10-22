@@ -30,7 +30,7 @@ const stats = {
   linksSkipped: 0,
 }
 
-async function scrape(url, retry) {
+async function scrape(url, retrySeconds) {
   try {
     // console.log(`Fetching ${url}...`)
     stats.linksCrawled++
