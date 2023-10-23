@@ -1,6 +1,8 @@
 import fetch from 'node-fetch'
 import fs from 'fs'
 import cheerio from 'cheerio'
+import pdf from 'pdf-parse-fork';
+import { convert } from 'html-to-text';
 import 'colors'
 
 console.clear()
@@ -39,7 +41,20 @@ async function scrape(url, retrySeconds) {
     const html = await res.text()
     const $ = cheerio.load(html)
     const links = []
-
+if(url.endsWith('.pdf')){
+  pdf(res).then(function(data) {
+    const urlToFilePath = 'data/'+new URL(url).hostname.replace(/\//g, '-')+new URL(url).pathname.replace(/\//g, '-')+'.txt';
+    fs.appendFile(urlToFilePath, url+"\n"+data.text, (err) => {})
+});
+}else{
+//save html page in foler with link
+const urlToFilePath = 'data/'+new URL(url).hostname.replace(/\//g, '-')+new URL(url).pathname.replace(/\//g, '-')+'.txt';
+Promise.resolve(convert(html))
+  .then(result => {
+    if(typeof result!='string'){
+    console.log(typeof result)}
+    fs.appendFile(urlToFilePath, url+'\n'+result, (err) => {})
+  });
     $('a').each((_, element) => {
       let link = $(element).attr('href')
       if (link[0] == '/') {
@@ -63,10 +78,6 @@ async function scrape(url, retrySeconds) {
             return
           }
         }
-        if (link.includes('.pdf')) {
-          fs.appendFile('links.txt', link + '\n', (err) => {})
-          return
-        }
         if (!allLinks.has(link)) {
           allLinks.add(link)
           fs.appendFile('links.txt', link + '\n', (err) => {})
@@ -78,6 +89,7 @@ async function scrape(url, retrySeconds) {
         stats.linksSkipped++
       }
     })
+  }
   } catch (err) {
     // console.error(err) // errors confusing, so commented out
     setTimeout(() => {
@@ -95,7 +107,7 @@ scrape('https://www.cod.edu/student_life/resources/counseling/pdf/student_planni
 
 // Prints status message
 function printStats() {
-  process.stdout.clearLine()
+  console.clear()  //keep this as clear because there are some font logs that can be cleared
   process.stdout.cursorTo(0)
   process.stdout.write(
     'Scraping...'.gray +

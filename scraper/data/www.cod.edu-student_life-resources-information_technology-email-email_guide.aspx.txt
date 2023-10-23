@@ -1,0 +1,865 @@
+https://www.cod.edu/student_life/resources/information_technology/email/email_guide.aspx
+ * Skip to Breadcrumb Navigation
+ * Skip to Main Content
+ * Skip to Footer
+
+
+ * Quick Links
+   * Blackboard [https://bb.cod.edu/]
+   * Calendar of Events [/calendar/index.php]
+   * COD Student Email
+     [/student_life/resources/information_technology/email/index.aspx]
+   * Directory [/faculty/index.aspx]
+   * Enrollment Calendar [/student-services/important-dates.aspx]
+   * Give [https://foundation.cod.edu/]
+   * InsideCOD Portal [https://inside.cod.edu/]
+   * Library [https://library.cod.edu/]
+   * News [/news/index.aspx]
+   * Search for Courses [https://selfserv.cod.edu/Student/Courses]
+   * Services [/about/community-offerings/index.aspx]
+   * Visit [/admission/visit_cod/index.aspx]
+ * Info For
+   * Alumni [https://alumni.cod.edu/]
+   * Community Members & Local Businesses
+     [/gateways/community-engagement/index.aspx]
+   * Continuing Education Students [/academics/continuing-education/index.aspx]
+   * Current Students [/gateways/current-students.aspx]
+   * Faculty and Staff [/gateways/faculty_staff.aspx]
+   * Military & Veteran Students [/student_life/resources/veterans/index.aspx]
+   * Parents [/gateways/parents/index.aspx]
+   * Vendors [/about/purchasing/index.aspx]
+ * Search College of DuPage
+   
+   Search
+
+ * Chappy the Chatbot can answer your general questions about COD. Chat with
+   Chappy [/chat.aspx].
+   
+   
+   Chat
+
+ * - Apply for Credit Classes. [https://admissions.cod.edu]       - Apply for
+   Continuing Education Classes. [/academics/continuing-education/index.aspx]
+   
+   
+   Apply
+
+ * College of DuPage [/_resources/img/global/logo-green.svg] /
+
+ * Academics
+   * Academics Home [/academics/index.aspx]
+   * Catalog [https://catalog.cod.edu/]
+   * Academic Resources [/student_life/resources/index.aspx]
+   * Academic Opportunities [/academics/academic_opportunities/index.aspx]
+   * Accreditation [/academics/accreditation/index.aspx]
+   * Continuing Education [/academics/continuing-education/index.aspx]
+   * Career and Technical Education
+     [/academics/career_technical_education/index.aspx]
+   * English Language Learners [/academics/els/index.aspx]
+   * Faculty [/faculty/index.aspx]
+ * Areas of Study
+   * Areas of Study Home [/academics/programs/index.aspx]
+   * New Degrees and Certificates [/academics/programs/new.aspx]
+   * Degree Programs [/academics/programs/degree_programs.aspx]
+   * Certificate Programs [/academics/programs/career_technical_programs.aspx]
+   * New Classes [/academics/programs/new_classes.aspx]
+   * Find Your Path [https://catalog.cod.edu/programs]
+   * Career and Technical Programs
+     [/academics/programs/career_technical_info_sheets.aspx]
+   * Transfer Information [/academics/transfer/index.aspx]
+   * Academic ELS [/academics/programs/els/index.aspx]
+ * Admissions
+   * Admissions Home [/admission/index.aspx]
+   * Campus Central [/admission/campus-central.aspx]
+   * Contact Admissions & Outreach [/admission/admissions_contact/index.aspx]
+   * High School Students
+     [/academics/academic_opportunities/high_school_students/index.aspx]
+   * International Students [/admission/international/index.aspx]
+   * Placement Testing
+     [/academics/testing/tests-administered/placement/index.aspx]
+   * Steps to Enrollment [/admission/steps-to-enrollment/index.aspx]
+   * Visit COD [/admission/visit_cod/index.aspx]
+ * Student Services
+   * Student Services Home [/student-services/index.aspx]
+   * Access and Accommodations
+     [/student_life/resources/access-accommodations/index.aspx]
+   * Center for Student Success
+     [/student_life/resources/center-for-student-success/index.aspx]
+   * Counseling, Advising and Transfer Services
+     [/student_life/resources/counseling/index.aspx]
+   * Enrollment Calendar [/student-services/important-dates.aspx]
+   * Learning Commons [/academics/learning_commons/index.aspx]
+   * Office of Student Records [/records/index.aspx]
+   * Registration Services [/registration/index.aspx]
+ * Costs, Scholarships & Aid
+   * Costs, Scholarships & Aid Home [/costs/index.aspx]
+   * Tuition and Fees [/costs/tuition/index.aspx]
+   * Student Employment: Federal Work-Study
+     [/costs/financial_aid/federal-work-study.aspx]
+   * Financial Aid [/costs/financial_aid/index.aspx]
+   * Payment Policy [/costs/tuition/payment-plans/payment-policy.aspx]
+   * Payment Plans [/costs/tuition/payment-plans/index.aspx]
+   * Scholarships [/costs/scholarships/index.aspx]
+ * Student Life & Resources
+   * Student Life Home [/student_life/index.aspx]
+   * Student Resources [/student_life/resources/index.aspx]
+   * Clubs and Organizations [/student_life/clubs_org/index.aspx]
+   * ChapLife [https://cod.presence.io/]
+   * Athletics [https://gochapsgo.com]
+   * Dean of Students [/student_life/dean-of-students/index.aspx]
+ * About Us
+   * About Us Home [/about/index.aspx]
+   * Administration [/about/administration/index.aspx]
+   * Office of the President [/about/office_of_the_president/index.aspx]
+   * Board of Trustees [/about/board_of_trustees/index.aspx]
+   * Human Resources [/about/humanresources/index.aspx]
+   * COD Facts [/about/cod-facts/index.aspx]
+   * Campus Facilities [/about/visitor-information/campus-facilities/index.aspx]
+   * Equity and Access [/about/campus-departments/equity/index.aspx]
+   * COD Stories [/about/stories/index.aspx]
+
+College of DuPage [/_resources/img/global/logo-white.svg] College of DuPage
+[/_resources/img/global/logo-green.svg] / Menu
+ * Search College of DuPage submit search
+
+ * Chappy the Chatbot can answer your general questions about COD. Chat with
+   Chappy [/chat.aspx].
+
+ * Apply for Credit Classes. [https://admissions.cod.edu]
+   Apply for Continuing Education Classes.
+   [/academics/continuing-education/index.aspx]
+
+ * Academics [/academics/index.aspx]
+ * Areas of Study [/academics/programs/index.aspx]
+ * Admissions [/admission/index.aspx]
+ * Student Services [/student-services/index.aspx]
+ * Costs, Scholarships & Aid [/costs/index.aspx]
+ * Student Life & Resources [/student_life/index.aspx]
+ * About Us [/about/index.aspx]
+
+ * Quick Links
+ * Blackboard [https://bb.cod.edu/]
+ * Calendar of Events [/calendar/index.php]
+ * COD Student Email
+   [/student_life/resources/information_technology/email/index.aspx]
+ * Directory [/faculty/index.aspx]
+ * Enrollment Calendar [/student-services/important-dates.aspx]
+ * Give [https://foundation.cod.edu/]
+ * InsideCOD Portal [https://inside.cod.edu/]
+ * Library [https://library.cod.edu/]
+ * News [/news/index.aspx]
+ * Search for Courses [https://selfserv.cod.edu/Student/Courses]
+ * Services [/about/community-offerings/index.aspx]
+ * Visit [/admission/visit_cod/index.aspx]
+
+ * Info For
+ * Alumni [https://alumni.cod.edu/]
+ * Community Members & Local Businesses
+   [/gateways/community-engagement/index.aspx]
+ * Continuing Education Students [/academics/continuing-education/index.aspx]
+ * Current Students [/gateways/current-students.aspx]
+ * Faculty and Staff [/gateways/faculty_staff.aspx]
+ * Military & Veteran Students [/student_life/resources/veterans/index.aspx]
+ * Parents [/gateways/parents/index.aspx]
+ * Vendors [/about/purchasing/index.aspx]
+
+Female student smiling while working on her computer
+[/_resources/img/hero/female-laptop-ssc-indoors-heroimage.jpg]
+Home [https://www.cod.edu/]Student Life
+[https://www.cod.edu/student_life/]Resources
+[https://www.cod.edu/student_life/resources/]Information Technology Services
+[https://www.cod.edu/student_life/resources/information_technology/]Student
+Email Tips
+[https://www.cod.edu/student_life/resources/information_technology/email/]Guide
+to Student Email
+
+
+GUIDE TO STUDENT EMAIL
+
+Toggle Sub-navigation
+ * Benefits of Microsoft Office 365
+   [/student_life/resources/information_technology/email/benefits.aspx]
+ * Student Email Policy
+   [/student_life/resources/information_technology/email/email-policy.aspx]
+ * Guide to Student Email
+   [/student_life/resources/information_technology/email/email_guide.aspx]
+
+Receive assistance with logging into your email, forwarding your email to
+another email account or accessing your email on a mobile device. 
+
+
+STUDENT EMAIL LOGIN
+
+ 1. Access Outlook [http://www.outlook.com/dupage.edu]
+ 2. Enter your MyACCESSid@dupage.edu when prompted for a User Name. Don't forget
+    to include the @dupage.edu part of your ID.
+ 3. Use your MyACCESS password when prompted for your password.
+
+
+FORWARDING YOUR EMAIL TO ANOTHER ACCOUNT
+
+ * Learn how to forward your @dupage.edu email
+   [/student_life/resources/information_technology/email/pdf/enabling_auto_forwarding.pdf]
+   to another account.
+
+
+ACCESSING YOUR EMAIL ON A MOBILE DEVICE
+
+ * View instructions for accessing your @dupage.edu email account on your mobile
+   device.
+   [/student_life/resources/information_technology/email/pdf/accessing_student_email_using_mobile_device.pdf]
+
+
+ADDITIONAL ASSISTANCE
+
+The student email system contains an online help system. The help system can be
+found in the upper right hand corner of the screen by clicking on the "?" icon.
+
+Students can contact the Student Support Help Desk at (630) 942-2999, via email
+at studenthelp@dupage.edu [studenthelp@dupage.edu] or in person in the Academic
+Computing Center located in the Student Resource Center (SRC), Room  3000, or
+Computer Lab located in the McAninch Arts Center (MAC), Room 189. View Help Desk
+hours. [/student_life/resources/information_technology/hours.aspx]
+
+The Student Support Help Desk will only be able to assist with questions
+regarding use of MyACCESS, student email, Blackboard, the portal and accessing
+the wireless network. 
+
+To ensure success, students should do their best to have access to computer
+hardware and software, including a webcam and Wi-Fi service. Our list of
+Accessing Email and College Learning Tools Remotely
+[/student_life/resources/information_technology/remote-access.aspx] can help you
+continue success.
+
+
+CONTACT INFORMATION
+
+Faculty/Staff Helpdesk
+(630) 942-4357
+Email: helpdesk@cod.edu [helpdesk@cod.edu]
+
+Student Helpdesk
+(630) 942-2999
+Email: studenthelp@dupage.edu
+
+[studenthelp@dupage.edu]Hours of Operation
+[/about/visitor-information/hours.aspx]
+
+ 
+ * College of DuPage [/_resources/img/global/logo-white.svg] /
+ * 425 Fawell Blvd., Glen Ellyn, IL 60137 (630) 942-2800 (Main)
+   [tel:+1-630-942-2800]
+   (630) 942-3000 (Student Services) [tel:+1-630-942-3000]
+ * Apply [https://admissions.cod.edu/]
+ * Map & Directions [/about/visitor-information/maps-directions/index.aspx]
+ * Directory [/faculty/index.aspx]
+ * Campus Hours [/about/visitor-information/hours.aspx]
+ * COD Centers [/about/visitor-information/centers/]
+ * * https://www.facebook.com/collegeofdupage
+   * https://twitter.com/collegedupage
+   * https://www.youtube.com/user/CollegeofDuPage
+   * https://www.linkedin.com/school/college-of-dupage/
+   * https://www.flickr.com/photos/codnewsroom/
+   * https://www.instagram.com/collegeofdupage/
+   * https://www.tiktok.com/@college_of_dupage/
+
+ * Legal & Consumer Information
+   [/about/administration/consumer_legal_information/index.aspx]
+ * Jobs [/about/humanresources/index.aspx]
+ * Police Department [/about/police_department/index.aspx]
+ * Contact COD [/about/contact.aspx]
+ * Media Contacts [/news/contact.aspx]
+ * A-Z Index [/a-to-z.aspx]
+ * Library [https://library.cod.edu/]
+ * Bookstore [/academics/bookstore.aspx]
+
+ * McAninch Arts Center [https://www.atthemac.org/]
+ * WDCB Public Radio [https://wdcb.org/]
+ * Veterans Services [/student_life/resources/veterans/index.aspx]
+ * Español
+   [/student_life/resources/csdi/latino_outreach/index_spanish_language.aspx]
+ * Access & Accommodations
+   [/student_life/resources/access-accommodations/index.aspx]
+ * MyACCESS [https://myaccess.cod.edu/]
+ * COD NOW Newsletter [/gateways/cod-now/index.aspx]
+
+© 2023 College of DuPage
+[https://www.facebook.com/tr?id=277801059754640&ev=PageView&noscript=1]
+©
+[https://a.cms.omniupdate.com/11/?skin=cod&account=main&site=www-2019&action=de&path=/student_life/resources/information_technology/email/email_guide.pcf]https://www.cod.edu/student_life/resources/information_technology/email/email_guide.aspx#forwarding
+ * Skip to Breadcrumb Navigation
+ * Skip to Main Content
+ * Skip to Footer
+
+
+ * Quick Links
+   * Blackboard [https://bb.cod.edu/]
+   * Calendar of Events [/calendar/index.php]
+   * COD Student Email
+     [/student_life/resources/information_technology/email/index.aspx]
+   * Directory [/faculty/index.aspx]
+   * Enrollment Calendar [/student-services/important-dates.aspx]
+   * Give [https://foundation.cod.edu/]
+   * InsideCOD Portal [https://inside.cod.edu/]
+   * Library [https://library.cod.edu/]
+   * News [/news/index.aspx]
+   * Search for Courses [https://selfserv.cod.edu/Student/Courses]
+   * Services [/about/community-offerings/index.aspx]
+   * Visit [/admission/visit_cod/index.aspx]
+ * Info For
+   * Alumni [https://alumni.cod.edu/]
+   * Community Members & Local Businesses
+     [/gateways/community-engagement/index.aspx]
+   * Continuing Education Students [/academics/continuing-education/index.aspx]
+   * Current Students [/gateways/current-students.aspx]
+   * Faculty and Staff [/gateways/faculty_staff.aspx]
+   * Military & Veteran Students [/student_life/resources/veterans/index.aspx]
+   * Parents [/gateways/parents/index.aspx]
+   * Vendors [/about/purchasing/index.aspx]
+ * Search College of DuPage
+   
+   Search
+
+ * Chappy the Chatbot can answer your general questions about COD. Chat with
+   Chappy [/chat.aspx].
+   
+   
+   Chat
+
+ * - Apply for Credit Classes. [https://admissions.cod.edu]       - Apply for
+   Continuing Education Classes. [/academics/continuing-education/index.aspx]
+   
+   
+   Apply
+
+ * College of DuPage [/_resources/img/global/logo-green.svg] /
+
+ * Academics
+   * Academics Home [/academics/index.aspx]
+   * Catalog [https://catalog.cod.edu/]
+   * Academic Resources [/student_life/resources/index.aspx]
+   * Academic Opportunities [/academics/academic_opportunities/index.aspx]
+   * Accreditation [/academics/accreditation/index.aspx]
+   * Continuing Education [/academics/continuing-education/index.aspx]
+   * Career and Technical Education
+     [/academics/career_technical_education/index.aspx]
+   * English Language Learners [/academics/els/index.aspx]
+   * Faculty [/faculty/index.aspx]
+ * Areas of Study
+   * Areas of Study Home [/academics/programs/index.aspx]
+   * New Degrees and Certificates [/academics/programs/new.aspx]
+   * Degree Programs [/academics/programs/degree_programs.aspx]
+   * Certificate Programs [/academics/programs/career_technical_programs.aspx]
+   * New Classes [/academics/programs/new_classes.aspx]
+   * Find Your Path [https://catalog.cod.edu/programs]
+   * Career and Technical Programs
+     [/academics/programs/career_technical_info_sheets.aspx]
+   * Transfer Information [/academics/transfer/index.aspx]
+   * Academic ELS [/academics/programs/els/index.aspx]
+ * Admissions
+   * Admissions Home [/admission/index.aspx]
+   * Campus Central [/admission/campus-central.aspx]
+   * Contact Admissions & Outreach [/admission/admissions_contact/index.aspx]
+   * High School Students
+     [/academics/academic_opportunities/high_school_students/index.aspx]
+   * International Students [/admission/international/index.aspx]
+   * Placement Testing
+     [/academics/testing/tests-administered/placement/index.aspx]
+   * Steps to Enrollment [/admission/steps-to-enrollment/index.aspx]
+   * Visit COD [/admission/visit_cod/index.aspx]
+ * Student Services
+   * Student Services Home [/student-services/index.aspx]
+   * Access and Accommodations
+     [/student_life/resources/access-accommodations/index.aspx]
+   * Center for Student Success
+     [/student_life/resources/center-for-student-success/index.aspx]
+   * Counseling, Advising and Transfer Services
+     [/student_life/resources/counseling/index.aspx]
+   * Enrollment Calendar [/student-services/important-dates.aspx]
+   * Learning Commons [/academics/learning_commons/index.aspx]
+   * Office of Student Records [/records/index.aspx]
+   * Registration Services [/registration/index.aspx]
+ * Costs, Scholarships & Aid
+   * Costs, Scholarships & Aid Home [/costs/index.aspx]
+   * Tuition and Fees [/costs/tuition/index.aspx]
+   * Student Employment: Federal Work-Study
+     [/costs/financial_aid/federal-work-study.aspx]
+   * Financial Aid [/costs/financial_aid/index.aspx]
+   * Payment Policy [/costs/tuition/payment-plans/payment-policy.aspx]
+   * Payment Plans [/costs/tuition/payment-plans/index.aspx]
+   * Scholarships [/costs/scholarships/index.aspx]
+ * Student Life & Resources
+   * Student Life Home [/student_life/index.aspx]
+   * Student Resources [/student_life/resources/index.aspx]
+   * Clubs and Organizations [/student_life/clubs_org/index.aspx]
+   * ChapLife [https://cod.presence.io/]
+   * Athletics [https://gochapsgo.com]
+   * Dean of Students [/student_life/dean-of-students/index.aspx]
+ * About Us
+   * About Us Home [/about/index.aspx]
+   * Administration [/about/administration/index.aspx]
+   * Office of the President [/about/office_of_the_president/index.aspx]
+   * Board of Trustees [/about/board_of_trustees/index.aspx]
+   * Human Resources [/about/humanresources/index.aspx]
+   * COD Facts [/about/cod-facts/index.aspx]
+   * Campus Facilities [/about/visitor-information/campus-facilities/index.aspx]
+   * Equity and Access [/about/campus-departments/equity/index.aspx]
+   * COD Stories [/about/stories/index.aspx]
+
+College of DuPage [/_resources/img/global/logo-white.svg] College of DuPage
+[/_resources/img/global/logo-green.svg] / Menu
+ * Search College of DuPage submit search
+
+ * Chappy the Chatbot can answer your general questions about COD. Chat with
+   Chappy [/chat.aspx].
+
+ * Apply for Credit Classes. [https://admissions.cod.edu]
+   Apply for Continuing Education Classes.
+   [/academics/continuing-education/index.aspx]
+
+ * Academics [/academics/index.aspx]
+ * Areas of Study [/academics/programs/index.aspx]
+ * Admissions [/admission/index.aspx]
+ * Student Services [/student-services/index.aspx]
+ * Costs, Scholarships & Aid [/costs/index.aspx]
+ * Student Life & Resources [/student_life/index.aspx]
+ * About Us [/about/index.aspx]
+
+ * Quick Links
+ * Blackboard [https://bb.cod.edu/]
+ * Calendar of Events [/calendar/index.php]
+ * COD Student Email
+   [/student_life/resources/information_technology/email/index.aspx]
+ * Directory [/faculty/index.aspx]
+ * Enrollment Calendar [/student-services/important-dates.aspx]
+ * Give [https://foundation.cod.edu/]
+ * InsideCOD Portal [https://inside.cod.edu/]
+ * Library [https://library.cod.edu/]
+ * News [/news/index.aspx]
+ * Search for Courses [https://selfserv.cod.edu/Student/Courses]
+ * Services [/about/community-offerings/index.aspx]
+ * Visit [/admission/visit_cod/index.aspx]
+
+ * Info For
+ * Alumni [https://alumni.cod.edu/]
+ * Community Members & Local Businesses
+   [/gateways/community-engagement/index.aspx]
+ * Continuing Education Students [/academics/continuing-education/index.aspx]
+ * Current Students [/gateways/current-students.aspx]
+ * Faculty and Staff [/gateways/faculty_staff.aspx]
+ * Military & Veteran Students [/student_life/resources/veterans/index.aspx]
+ * Parents [/gateways/parents/index.aspx]
+ * Vendors [/about/purchasing/index.aspx]
+
+Female student smiling while working on her computer
+[/_resources/img/hero/female-laptop-ssc-indoors-heroimage.jpg]
+Home [https://www.cod.edu/]Student Life
+[https://www.cod.edu/student_life/]Resources
+[https://www.cod.edu/student_life/resources/]Information Technology Services
+[https://www.cod.edu/student_life/resources/information_technology/]Student
+Email Tips
+[https://www.cod.edu/student_life/resources/information_technology/email/]Guide
+to Student Email
+
+
+GUIDE TO STUDENT EMAIL
+
+Toggle Sub-navigation
+ * Benefits of Microsoft Office 365
+   [/student_life/resources/information_technology/email/benefits.aspx]
+ * Student Email Policy
+   [/student_life/resources/information_technology/email/email-policy.aspx]
+ * Guide to Student Email
+   [/student_life/resources/information_technology/email/email_guide.aspx]
+
+Receive assistance with logging into your email, forwarding your email to
+another email account or accessing your email on a mobile device. 
+
+
+STUDENT EMAIL LOGIN
+
+ 1. Access Outlook [http://www.outlook.com/dupage.edu]
+ 2. Enter your MyACCESSid@dupage.edu when prompted for a User Name. Don't forget
+    to include the @dupage.edu part of your ID.
+ 3. Use your MyACCESS password when prompted for your password.
+
+
+FORWARDING YOUR EMAIL TO ANOTHER ACCOUNT
+
+ * Learn how to forward your @dupage.edu email
+   [/student_life/resources/information_technology/email/pdf/enabling_auto_forwarding.pdf]
+   to another account.
+
+
+ACCESSING YOUR EMAIL ON A MOBILE DEVICE
+
+ * View instructions for accessing your @dupage.edu email account on your mobile
+   device.
+   [/student_life/resources/information_technology/email/pdf/accessing_student_email_using_mobile_device.pdf]
+
+
+ADDITIONAL ASSISTANCE
+
+The student email system contains an online help system. The help system can be
+found in the upper right hand corner of the screen by clicking on the "?" icon.
+
+Students can contact the Student Support Help Desk at (630) 942-2999, via email
+at studenthelp@dupage.edu [studenthelp@dupage.edu] or in person in the Academic
+Computing Center located in the Student Resource Center (SRC), Room  3000, or
+Computer Lab located in the McAninch Arts Center (MAC), Room 189. View Help Desk
+hours. [/student_life/resources/information_technology/hours.aspx]
+
+The Student Support Help Desk will only be able to assist with questions
+regarding use of MyACCESS, student email, Blackboard, the portal and accessing
+the wireless network. 
+
+To ensure success, students should do their best to have access to computer
+hardware and software, including a webcam and Wi-Fi service. Our list of
+Accessing Email and College Learning Tools Remotely
+[/student_life/resources/information_technology/remote-access.aspx] can help you
+continue success.
+
+
+CONTACT INFORMATION
+
+Faculty/Staff Helpdesk
+(630) 942-4357
+Email: helpdesk@cod.edu [helpdesk@cod.edu]
+
+Student Helpdesk
+(630) 942-2999
+Email: studenthelp@dupage.edu
+
+[studenthelp@dupage.edu]Hours of Operation
+[/about/visitor-information/hours.aspx]
+
+ 
+ * College of DuPage [/_resources/img/global/logo-white.svg] /
+ * 425 Fawell Blvd., Glen Ellyn, IL 60137 (630) 942-2800 (Main)
+   [tel:+1-630-942-2800]
+   (630) 942-3000 (Student Services) [tel:+1-630-942-3000]
+ * Apply [https://admissions.cod.edu/]
+ * Map & Directions [/about/visitor-information/maps-directions/index.aspx]
+ * Directory [/faculty/index.aspx]
+ * Campus Hours [/about/visitor-information/hours.aspx]
+ * COD Centers [/about/visitor-information/centers/]
+ * * https://www.facebook.com/collegeofdupage
+   * https://twitter.com/collegedupage
+   * https://www.youtube.com/user/CollegeofDuPage
+   * https://www.linkedin.com/school/college-of-dupage/
+   * https://www.flickr.com/photos/codnewsroom/
+   * https://www.instagram.com/collegeofdupage/
+   * https://www.tiktok.com/@college_of_dupage/
+
+ * Legal & Consumer Information
+   [/about/administration/consumer_legal_information/index.aspx]
+ * Jobs [/about/humanresources/index.aspx]
+ * Police Department [/about/police_department/index.aspx]
+ * Contact COD [/about/contact.aspx]
+ * Media Contacts [/news/contact.aspx]
+ * A-Z Index [/a-to-z.aspx]
+ * Library [https://library.cod.edu/]
+ * Bookstore [/academics/bookstore.aspx]
+
+ * McAninch Arts Center [https://www.atthemac.org/]
+ * WDCB Public Radio [https://wdcb.org/]
+ * Veterans Services [/student_life/resources/veterans/index.aspx]
+ * Español
+   [/student_life/resources/csdi/latino_outreach/index_spanish_language.aspx]
+ * Access & Accommodations
+   [/student_life/resources/access-accommodations/index.aspx]
+ * MyACCESS [https://myaccess.cod.edu/]
+ * COD NOW Newsletter [/gateways/cod-now/index.aspx]
+
+© 2023 College of DuPage
+[https://www.facebook.com/tr?id=277801059754640&ev=PageView&noscript=1]
+©
+[https://a.cms.omniupdate.com/11/?skin=cod&account=main&site=www-2019&action=de&path=/student_life/resources/information_technology/email/email_guide.pcf]https://www.cod.edu/student_life/resources/information_technology/email/email_guide.aspx#mobile
+ * Skip to Breadcrumb Navigation
+ * Skip to Main Content
+ * Skip to Footer
+
+
+ * Quick Links
+   * Blackboard [https://bb.cod.edu/]
+   * Calendar of Events [/calendar/index.php]
+   * COD Student Email
+     [/student_life/resources/information_technology/email/index.aspx]
+   * Directory [/faculty/index.aspx]
+   * Enrollment Calendar [/student-services/important-dates.aspx]
+   * Give [https://foundation.cod.edu/]
+   * InsideCOD Portal [https://inside.cod.edu/]
+   * Library [https://library.cod.edu/]
+   * News [/news/index.aspx]
+   * Search for Courses [https://selfserv.cod.edu/Student/Courses]
+   * Services [/about/community-offerings/index.aspx]
+   * Visit [/admission/visit_cod/index.aspx]
+ * Info For
+   * Alumni [https://alumni.cod.edu/]
+   * Community Members & Local Businesses
+     [/gateways/community-engagement/index.aspx]
+   * Continuing Education Students [/academics/continuing-education/index.aspx]
+   * Current Students [/gateways/current-students.aspx]
+   * Faculty and Staff [/gateways/faculty_staff.aspx]
+   * Military & Veteran Students [/student_life/resources/veterans/index.aspx]
+   * Parents [/gateways/parents/index.aspx]
+   * Vendors [/about/purchasing/index.aspx]
+ * Search College of DuPage
+   
+   Search
+
+ * Chappy the Chatbot can answer your general questions about COD. Chat with
+   Chappy [/chat.aspx].
+   
+   
+   Chat
+
+ * - Apply for Credit Classes. [https://admissions.cod.edu]       - Apply for
+   Continuing Education Classes. [/academics/continuing-education/index.aspx]
+   
+   
+   Apply
+
+ * College of DuPage [/_resources/img/global/logo-green.svg] /
+
+ * Academics
+   * Academics Home [/academics/index.aspx]
+   * Catalog [https://catalog.cod.edu/]
+   * Academic Resources [/student_life/resources/index.aspx]
+   * Academic Opportunities [/academics/academic_opportunities/index.aspx]
+   * Accreditation [/academics/accreditation/index.aspx]
+   * Continuing Education [/academics/continuing-education/index.aspx]
+   * Career and Technical Education
+     [/academics/career_technical_education/index.aspx]
+   * English Language Learners [/academics/els/index.aspx]
+   * Faculty [/faculty/index.aspx]
+ * Areas of Study
+   * Areas of Study Home [/academics/programs/index.aspx]
+   * New Degrees and Certificates [/academics/programs/new.aspx]
+   * Degree Programs [/academics/programs/degree_programs.aspx]
+   * Certificate Programs [/academics/programs/career_technical_programs.aspx]
+   * New Classes [/academics/programs/new_classes.aspx]
+   * Find Your Path [https://catalog.cod.edu/programs]
+   * Career and Technical Programs
+     [/academics/programs/career_technical_info_sheets.aspx]
+   * Transfer Information [/academics/transfer/index.aspx]
+   * Academic ELS [/academics/programs/els/index.aspx]
+ * Admissions
+   * Admissions Home [/admission/index.aspx]
+   * Campus Central [/admission/campus-central.aspx]
+   * Contact Admissions & Outreach [/admission/admissions_contact/index.aspx]
+   * High School Students
+     [/academics/academic_opportunities/high_school_students/index.aspx]
+   * International Students [/admission/international/index.aspx]
+   * Placement Testing
+     [/academics/testing/tests-administered/placement/index.aspx]
+   * Steps to Enrollment [/admission/steps-to-enrollment/index.aspx]
+   * Visit COD [/admission/visit_cod/index.aspx]
+ * Student Services
+   * Student Services Home [/student-services/index.aspx]
+   * Access and Accommodations
+     [/student_life/resources/access-accommodations/index.aspx]
+   * Center for Student Success
+     [/student_life/resources/center-for-student-success/index.aspx]
+   * Counseling, Advising and Transfer Services
+     [/student_life/resources/counseling/index.aspx]
+   * Enrollment Calendar [/student-services/important-dates.aspx]
+   * Learning Commons [/academics/learning_commons/index.aspx]
+   * Office of Student Records [/records/index.aspx]
+   * Registration Services [/registration/index.aspx]
+ * Costs, Scholarships & Aid
+   * Costs, Scholarships & Aid Home [/costs/index.aspx]
+   * Tuition and Fees [/costs/tuition/index.aspx]
+   * Student Employment: Federal Work-Study
+     [/costs/financial_aid/federal-work-study.aspx]
+   * Financial Aid [/costs/financial_aid/index.aspx]
+   * Payment Policy [/costs/tuition/payment-plans/payment-policy.aspx]
+   * Payment Plans [/costs/tuition/payment-plans/index.aspx]
+   * Scholarships [/costs/scholarships/index.aspx]
+ * Student Life & Resources
+   * Student Life Home [/student_life/index.aspx]
+   * Student Resources [/student_life/resources/index.aspx]
+   * Clubs and Organizations [/student_life/clubs_org/index.aspx]
+   * ChapLife [https://cod.presence.io/]
+   * Athletics [https://gochapsgo.com]
+   * Dean of Students [/student_life/dean-of-students/index.aspx]
+ * About Us
+   * About Us Home [/about/index.aspx]
+   * Administration [/about/administration/index.aspx]
+   * Office of the President [/about/office_of_the_president/index.aspx]
+   * Board of Trustees [/about/board_of_trustees/index.aspx]
+   * Human Resources [/about/humanresources/index.aspx]
+   * COD Facts [/about/cod-facts/index.aspx]
+   * Campus Facilities [/about/visitor-information/campus-facilities/index.aspx]
+   * Equity and Access [/about/campus-departments/equity/index.aspx]
+   * COD Stories [/about/stories/index.aspx]
+
+College of DuPage [/_resources/img/global/logo-white.svg] College of DuPage
+[/_resources/img/global/logo-green.svg] / Menu
+ * Search College of DuPage submit search
+
+ * Chappy the Chatbot can answer your general questions about COD. Chat with
+   Chappy [/chat.aspx].
+
+ * Apply for Credit Classes. [https://admissions.cod.edu]
+   Apply for Continuing Education Classes.
+   [/academics/continuing-education/index.aspx]
+
+ * Academics [/academics/index.aspx]
+ * Areas of Study [/academics/programs/index.aspx]
+ * Admissions [/admission/index.aspx]
+ * Student Services [/student-services/index.aspx]
+ * Costs, Scholarships & Aid [/costs/index.aspx]
+ * Student Life & Resources [/student_life/index.aspx]
+ * About Us [/about/index.aspx]
+
+ * Quick Links
+ * Blackboard [https://bb.cod.edu/]
+ * Calendar of Events [/calendar/index.php]
+ * COD Student Email
+   [/student_life/resources/information_technology/email/index.aspx]
+ * Directory [/faculty/index.aspx]
+ * Enrollment Calendar [/student-services/important-dates.aspx]
+ * Give [https://foundation.cod.edu/]
+ * InsideCOD Portal [https://inside.cod.edu/]
+ * Library [https://library.cod.edu/]
+ * News [/news/index.aspx]
+ * Search for Courses [https://selfserv.cod.edu/Student/Courses]
+ * Services [/about/community-offerings/index.aspx]
+ * Visit [/admission/visit_cod/index.aspx]
+
+ * Info For
+ * Alumni [https://alumni.cod.edu/]
+ * Community Members & Local Businesses
+   [/gateways/community-engagement/index.aspx]
+ * Continuing Education Students [/academics/continuing-education/index.aspx]
+ * Current Students [/gateways/current-students.aspx]
+ * Faculty and Staff [/gateways/faculty_staff.aspx]
+ * Military & Veteran Students [/student_life/resources/veterans/index.aspx]
+ * Parents [/gateways/parents/index.aspx]
+ * Vendors [/about/purchasing/index.aspx]
+
+Female student smiling while working on her computer
+[/_resources/img/hero/female-laptop-ssc-indoors-heroimage.jpg]
+Home [https://www.cod.edu/]Student Life
+[https://www.cod.edu/student_life/]Resources
+[https://www.cod.edu/student_life/resources/]Information Technology Services
+[https://www.cod.edu/student_life/resources/information_technology/]Student
+Email Tips
+[https://www.cod.edu/student_life/resources/information_technology/email/]Guide
+to Student Email
+
+
+GUIDE TO STUDENT EMAIL
+
+Toggle Sub-navigation
+ * Benefits of Microsoft Office 365
+   [/student_life/resources/information_technology/email/benefits.aspx]
+ * Student Email Policy
+   [/student_life/resources/information_technology/email/email-policy.aspx]
+ * Guide to Student Email
+   [/student_life/resources/information_technology/email/email_guide.aspx]
+
+Receive assistance with logging into your email, forwarding your email to
+another email account or accessing your email on a mobile device. 
+
+
+STUDENT EMAIL LOGIN
+
+ 1. Access Outlook [http://www.outlook.com/dupage.edu]
+ 2. Enter your MyACCESSid@dupage.edu when prompted for a User Name. Don't forget
+    to include the @dupage.edu part of your ID.
+ 3. Use your MyACCESS password when prompted for your password.
+
+
+FORWARDING YOUR EMAIL TO ANOTHER ACCOUNT
+
+ * Learn how to forward your @dupage.edu email
+   [/student_life/resources/information_technology/email/pdf/enabling_auto_forwarding.pdf]
+   to another account.
+
+
+ACCESSING YOUR EMAIL ON A MOBILE DEVICE
+
+ * View instructions for accessing your @dupage.edu email account on your mobile
+   device.
+   [/student_life/resources/information_technology/email/pdf/accessing_student_email_using_mobile_device.pdf]
+
+
+ADDITIONAL ASSISTANCE
+
+The student email system contains an online help system. The help system can be
+found in the upper right hand corner of the screen by clicking on the "?" icon.
+
+Students can contact the Student Support Help Desk at (630) 942-2999, via email
+at studenthelp@dupage.edu [studenthelp@dupage.edu] or in person in the Academic
+Computing Center located in the Student Resource Center (SRC), Room  3000, or
+Computer Lab located in the McAninch Arts Center (MAC), Room 189. View Help Desk
+hours. [/student_life/resources/information_technology/hours.aspx]
+
+The Student Support Help Desk will only be able to assist with questions
+regarding use of MyACCESS, student email, Blackboard, the portal and accessing
+the wireless network. 
+
+To ensure success, students should do their best to have access to computer
+hardware and software, including a webcam and Wi-Fi service. Our list of
+Accessing Email and College Learning Tools Remotely
+[/student_life/resources/information_technology/remote-access.aspx] can help you
+continue success.
+
+
+CONTACT INFORMATION
+
+Faculty/Staff Helpdesk
+(630) 942-4357
+Email: helpdesk@cod.edu [helpdesk@cod.edu]
+
+Student Helpdesk
+(630) 942-2999
+Email: studenthelp@dupage.edu
+
+[studenthelp@dupage.edu]Hours of Operation
+[/about/visitor-information/hours.aspx]
+
+ 
+ * College of DuPage [/_resources/img/global/logo-white.svg] /
+ * 425 Fawell Blvd., Glen Ellyn, IL 60137 (630) 942-2800 (Main)
+   [tel:+1-630-942-2800]
+   (630) 942-3000 (Student Services) [tel:+1-630-942-3000]
+ * Apply [https://admissions.cod.edu/]
+ * Map & Directions [/about/visitor-information/maps-directions/index.aspx]
+ * Directory [/faculty/index.aspx]
+ * Campus Hours [/about/visitor-information/hours.aspx]
+ * COD Centers [/about/visitor-information/centers/]
+ * * https://www.facebook.com/collegeofdupage
+   * https://twitter.com/collegedupage
+   * https://www.youtube.com/user/CollegeofDuPage
+   * https://www.linkedin.com/school/college-of-dupage/
+   * https://www.flickr.com/photos/codnewsroom/
+   * https://www.instagram.com/collegeofdupage/
+   * https://www.tiktok.com/@college_of_dupage/
+
+ * Legal & Consumer Information
+   [/about/administration/consumer_legal_information/index.aspx]
+ * Jobs [/about/humanresources/index.aspx]
+ * Police Department [/about/police_department/index.aspx]
+ * Contact COD [/about/contact.aspx]
+ * Media Contacts [/news/contact.aspx]
+ * A-Z Index [/a-to-z.aspx]
+ * Library [https://library.cod.edu/]
+ * Bookstore [/academics/bookstore.aspx]
+
+ * McAninch Arts Center [https://www.atthemac.org/]
+ * WDCB Public Radio [https://wdcb.org/]
+ * Veterans Services [/student_life/resources/veterans/index.aspx]
+ * Español
+   [/student_life/resources/csdi/latino_outreach/index_spanish_language.aspx]
+ * Access & Accommodations
+   [/student_life/resources/access-accommodations/index.aspx]
+ * MyACCESS [https://myaccess.cod.edu/]
+ * COD NOW Newsletter [/gateways/cod-now/index.aspx]
+
+© 2023 College of DuPage
+[https://www.facebook.com/tr?id=277801059754640&ev=PageView&noscript=1]
+©
+[https://a.cms.omniupdate.com/11/?skin=cod&account=main&site=www-2019&action=de&path=/student_life/resources/information_technology/email/email_guide.pcf]
