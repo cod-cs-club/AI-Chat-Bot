@@ -1,0 +1,798 @@
+https://www.cod.edu/academics/programs/cis/index.aspx
+ * Skip to Breadcrumb Navigation
+ * Skip to Main Content
+ * Skip to Footer
+
+
+ * Quick Links
+   * Blackboard [https://bb.cod.edu/]
+   * Calendar of Events [/calendar/index.php]
+   * COD Student Email
+     [/student_life/resources/information_technology/email/index.aspx]
+   * Directory [/faculty/index.aspx]
+   * Enrollment Calendar [/student-services/important-dates.aspx]
+   * Give [https://foundation.cod.edu/]
+   * InsideCOD Portal [https://inside.cod.edu/]
+   * Library [https://library.cod.edu/]
+   * News [/news/index.aspx]
+   * Search for Courses [https://selfserv.cod.edu/Student/Courses]
+   * Services [/about/community-offerings/index.aspx]
+   * Visit [/admission/visit_cod/index.aspx]
+ * Info For
+   * Alumni [https://alumni.cod.edu/]
+   * Community Members & Local Businesses
+     [/gateways/community-engagement/index.aspx]
+   * Continuing Education Students [/academics/continuing-education/index.aspx]
+   * Current Students [/gateways/current-students.aspx]
+   * Faculty and Staff [/gateways/faculty_staff.aspx]
+   * Military & Veteran Students [/student_life/resources/veterans/index.aspx]
+   * Parents [/gateways/parents/index.aspx]
+   * Vendors [/about/purchasing/index.aspx]
+ * Search College of DuPage
+   
+   Search
+
+ * Chappy the Chatbot can answer your general questions about COD. Chat with
+   Chappy [/chat.aspx].
+   
+   
+   Chat
+
+ * - Apply for Credit Classes. [https://admissions.cod.edu]       - Apply for
+   Continuing Education Classes. [/academics/continuing-education/index.aspx]
+   
+   
+   Apply
+
+ * College of DuPage [/_resources/img/global/logo-green.svg] /
+
+ * Academics
+   * Academics Home [/academics/index.aspx]
+   * Catalog [https://catalog.cod.edu/]
+   * Academic Resources [/student_life/resources/index.aspx]
+   * Academic Opportunities [/academics/academic_opportunities/index.aspx]
+   * Accreditation [/academics/accreditation/index.aspx]
+   * Continuing Education [/academics/continuing-education/index.aspx]
+   * Career and Technical Education
+     [/academics/career_technical_education/index.aspx]
+   * English Language Learners [/academics/els/index.aspx]
+   * Faculty [/faculty/index.aspx]
+ * Areas of Study
+   * Areas of Study Home [/academics/programs/index.aspx]
+   * New Degrees and Certificates [/academics/programs/new.aspx]
+   * Degree Programs [/academics/programs/degree_programs.aspx]
+   * Certificate Programs [/academics/programs/career_technical_programs.aspx]
+   * New Classes [/academics/programs/new_classes.aspx]
+   * Find Your Path [https://catalog.cod.edu/programs]
+   * Career and Technical Programs
+     [/academics/programs/career_technical_info_sheets.aspx]
+   * Transfer Information [/academics/transfer/index.aspx]
+   * Academic ELS [/academics/programs/els/index.aspx]
+ * Admissions
+   * Admissions Home [/admission/index.aspx]
+   * Campus Central [/admission/campus-central.aspx]
+   * Contact Admissions & Outreach [/admission/admissions_contact/index.aspx]
+   * High School Students
+     [/academics/academic_opportunities/high_school_students/index.aspx]
+   * International Students [/admission/international/index.aspx]
+   * Placement Testing
+     [/academics/testing/tests-administered/placement/index.aspx]
+   * Steps to Enrollment [/admission/steps-to-enrollment/index.aspx]
+   * Visit COD [/admission/visit_cod/index.aspx]
+ * Student Services
+   * Student Services Home [/student-services/index.aspx]
+   * Access and Accommodations
+     [/student_life/resources/access-accommodations/index.aspx]
+   * Center for Student Success
+     [/student_life/resources/center-for-student-success/index.aspx]
+   * Counseling, Advising and Transfer Services
+     [/student_life/resources/counseling/index.aspx]
+   * Enrollment Calendar [/student-services/important-dates.aspx]
+   * Learning Commons [/academics/learning_commons/index.aspx]
+   * Office of Student Records [/records/index.aspx]
+   * Registration Services [/registration/index.aspx]
+ * Costs, Scholarships & Aid
+   * Costs, Scholarships & Aid Home [/costs/index.aspx]
+   * Tuition and Fees [/costs/tuition/index.aspx]
+   * Student Employment: Federal Work-Study
+     [/costs/financial_aid/federal-work-study.aspx]
+   * Financial Aid [/costs/financial_aid/index.aspx]
+   * Payment Policy [/costs/tuition/payment-plans/payment-policy.aspx]
+   * Payment Plans [/costs/tuition/payment-plans/index.aspx]
+   * Scholarships [/costs/scholarships/index.aspx]
+ * Student Life & Resources
+   * Student Life Home [/student_life/index.aspx]
+   * Student Resources [/student_life/resources/index.aspx]
+   * Clubs and Organizations [/student_life/clubs_org/index.aspx]
+   * ChapLife [https://cod.presence.io/]
+   * Athletics [https://gochapsgo.com]
+   * Dean of Students [/student_life/dean-of-students/index.aspx]
+ * About Us
+   * About Us Home [/about/index.aspx]
+   * Administration [/about/administration/index.aspx]
+   * Office of the President [/about/office_of_the_president/index.aspx]
+   * Board of Trustees [/about/board_of_trustees/index.aspx]
+   * Human Resources [/about/humanresources/index.aspx]
+   * COD Facts [/about/cod-facts/index.aspx]
+   * Campus Facilities [/about/visitor-information/campus-facilities/index.aspx]
+   * Equity and Access [/about/campus-departments/equity/index.aspx]
+   * COD Stories [/about/stories/index.aspx]
+
+College of DuPage [/_resources/img/global/logo-white.svg] College of DuPage
+[/_resources/img/global/logo-green.svg] / Menu
+ * Search College of DuPage submit search
+
+ * Chappy the Chatbot can answer your general questions about COD. Chat with
+   Chappy [/chat.aspx].
+
+ * Apply for Credit Classes. [https://admissions.cod.edu]
+   Apply for Continuing Education Classes.
+   [/academics/continuing-education/index.aspx]
+
+ * Academics [/academics/index.aspx]
+ * Areas of Study [/academics/programs/index.aspx]
+ * Admissions [/admission/index.aspx]
+ * Student Services [/student-services/index.aspx]
+ * Costs, Scholarships & Aid [/costs/index.aspx]
+ * Student Life & Resources [/student_life/index.aspx]
+ * About Us [/about/index.aspx]
+
+ * Quick Links
+ * Blackboard [https://bb.cod.edu/]
+ * Calendar of Events [/calendar/index.php]
+ * COD Student Email
+   [/student_life/resources/information_technology/email/index.aspx]
+ * Directory [/faculty/index.aspx]
+ * Enrollment Calendar [/student-services/important-dates.aspx]
+ * Give [https://foundation.cod.edu/]
+ * InsideCOD Portal [https://inside.cod.edu/]
+ * Library [https://library.cod.edu/]
+ * News [/news/index.aspx]
+ * Search for Courses [https://selfserv.cod.edu/Student/Courses]
+ * Services [/about/community-offerings/index.aspx]
+ * Visit [/admission/visit_cod/index.aspx]
+
+ * Info For
+ * Alumni [https://alumni.cod.edu/]
+ * Community Members & Local Businesses
+   [/gateways/community-engagement/index.aspx]
+ * Continuing Education Students [/academics/continuing-education/index.aspx]
+ * Current Students [/gateways/current-students.aspx]
+ * Faculty and Staff [/gateways/faculty_staff.aspx]
+ * Military & Veteran Students [/student_life/resources/veterans/index.aspx]
+ * Parents [/gateways/parents/index.aspx]
+ * Vendors [/about/purchasing/index.aspx]
+
+students working on computers
+[/_resources/img/hero/computerinformationsystems-class-heroimage.jpg]
+Home [https://www.cod.edu/]Academics [https://www.cod.edu/academics/]Areas of
+Study [https://www.cod.edu/academics/programs/]Computer and Information Science
+Program
+
+
+COMPUTER AND INFORMATION SCIENCE PROGRAM
+
+The Computer and Information Science (CIS) program gives students a variety of
+options to prepare for a career in information technology (IT). Earn one of six
+[https://catalog.cod.edu/programs-study/computer-information-science/]Associate
+in Applied Science degrees in application and technical support, game animation
+and design, game programming and development and software development. Over
+fifteen certifications
+[https://catalog.cod.edu/programs-study/computer-information-science/] are also
+available for students interested in taking specialized courses to update their
+skills.
+
+CIS courses [https://catalog.cod.edu/courses-a-z/cis/]are designed to give
+professionals working outside the IT field the knowledge to utilize current and
+emerging technologies required for their jobs. A few recent course additions
+include: AI Technical Essentials, Swift Programming Language, AR and VR
+Development, Introduction to Human-Computer, Interaction and Data Analytics and
+Visualization.
+
+Facilities and equipment for the CIS program are housed in the Seaton Computing
+Center [/about/visitor-information/campus-facilities/scc.aspx] (SCC) and Berg
+Instructional Center
+[/about/visitor-information/campus-facilities/bic_ssc.aspx](BIC). Facilities
+include high-tech classrooms, augmented reality (AR) and virtual reality (VR), a
+visual and simulation lab, networking hardware labs, a server/internetworking
+lab, software/web development labs and end-user labs.
+
+
+DETERMINE YOUR PATH
+
+Job growth in computer-related careers is expected to continue into the next
+decade. Career opportunities are varied and include application developers,
+computer service technicians, data entry personnel, network administrators,
+programmers, software developers, support technicians, video game developers and
+web specialists.
+
+Why CODDegreesCertificates
+Why COD
+
+Whether you are preparing for a career in the IT industry, planning to transfer
+to a four-year baccalaureate-granting institution or updating your skills,
+College of DuPage has the right program for you. We offer: 
+
+ * Dedicated instructors with years of practical industry experience,
+   certification and licensing.
+ * Instruction in top-notch facilities and on cutting-edge equipment.
+ * Flexible schedules with day, evening and online learning.
+ * Practical, hands-on experience as well as classroom-based studies.
+ * Affordable programs that get you on the fast track to success without
+   breaking the bank.
+ * Training that is accredited and certified by industry associations and
+   educational organizations ensure the most up-to-date and relevant training
+   necessary for a competitive edge on the job market and a successful career.
+ * Articulated computer and information system transfer and 3+1 agreements
+   [/academics/transfer/programs/computer-information-science.aspx] with
+   respected baccalaureate-granting institutions enable seamless transfer of
+   earned credits.
+
+Degrees
+
+Each degree program consists of a minimum of 64 credits in general education
+requirements and program requirements.
+
+
+APPLICATION AND TECHNICAL SUPPORT SPECIALIST
+
+The Application and Technical Support Specialist
+[https://catalog.cod.edu/programs-study/computer-information-science/application-technical-support-specialist-aas/] degree
+program prepares students to work as support specialists for a range of
+technology products.
+
+Students gain skills and knowledge in computer programming, customer service,
+Linux and UNIX operating systems, networking, PC maintenance and upgrading, and
+system analysis and design. 
+
+
+GAME ANIMATION AND DESIGN
+
+The Game Animation and Design
+[https://catalog.cod.edu/programs-study/computer-information-science/game-animation-design-aas/]
+degree program prepares students to create animations, design and develop video
+games and incorporate art assets using game industry tools.
+
+Students learn concepts and techniques in 2D and 3D game design and development
+for Windows PC, game consoles and virtual reality, basic theory of design
+through practiced professional game design techniques, game asset creation,
+programming logic using Python.
+
+Animation will be stressed in a studio art atmosphere where students will be
+introduced to historical through present day animation, and will create 2D and
+3D animations and special effects for film and video games.
+
+The Game Animation and Design Associate in Applied Sciences degree is a
+nationally accredited program through the National Association of Schools of Art
+and Design (NASAD). [http://nasad.arts-accredit.org]
+
+
+GAME DESIGN AND DEVELOPMENT
+
+The Game Design and Development
+[https://catalog.cod.edu/programs-study/computer-information-science/game-design-development-aas/]
+degree program prepares students to design and develop video games through
+application of game design elements and development tools used in the game
+industry.
+
+Students learn concepts and techniques in 2D and 3D game design and development
+for Windows PC, game consoles virtual reality, game asset creation, programming
+logic using Python, and C++ language programming.
+
+Game design will be stressed in both theory and practice, from basic theory of
+design through practiced professional game design techniques. 
+
+
+GAME PROGRAMMING AND DEVELOPMENT
+
+The Game Programming and Development
+[https://catalog.cod.edu/programs-study/computer-information-science/game-programming-development-aas/]
+degree program prepares students to develop video games using industry standard
+programming languages, tools, and techniques. Students will learn concepts and
+techniques in 2D and 3D game design and development for Windows PC, game
+consoles and virtual reality, programming logic using Python, system analysis.
+
+The C++ programming language will be stressed both in theory and in practice,
+from basic syntax to development of data structures required during software
+development. Assembly language programming, software engineering techniques
+needed to create custom game engines.
+
+
+SOFTWARE DEVELOPMENT
+
+The Software Development
+[https://catalog.cod.edu/programs-study/computer-information-science/software-development-aas/]
+degree program prepares students to work in a variety of roles in the field of
+computer technology. Students gain knowledge and skills in computer programming,
+HTML and XML programming languages, database applications, Linux and UNIX
+operating systems, networking, and system analysis and design.
+
+This degree can be earned with emphasis in C++, Java, Visual Basic, or .NET.
+
+
+WEB DEVELOPMENT
+
+The Web Development
+[https://catalog.cod.edu/programs-study/computer-information-science/web-development-aas/]
+degree is designed for students who wish to enter into the web development
+market or already working as a web developer in the industry. This degree
+prepares students to design and develop web sites using the popular web
+development technologies of the day.
+
+Certificates
+
+The CIS program offers certificates in a variety of disciplines. These targeted
+programs range in length from 12 to 35 credit hours. Most students enroll in
+these programs to improve their on-the-job credentials, retrain for a new career
+in technology, or upgrade skills for a competitive edge in the job market.
+
+Please note: Several classes have prerequisite requirements. Students should
+consult with a faculty advisor for more information on prerequisite requirements
+for specific programs.
+
+
+BUSINESS PRODUCTIVITY
+
+The Business Productivity Software
+[https://catalog.cod.edu/programs-study/computer-information-science/business-productivity-software-certificate/]
+certificate requires 19 credits.
+
+
+C++ LANGUAGE PROFICIENCY
+
+The C++ Language Proficiency
+[https://catalog.cod.edu/programs-study/computer-information-science/c-language-proficiency-certificate/]
+certificate requires 15 credits.
+
+
+DATA ANALYTICS AND VISUALIZATION
+
+The Data Analytics and Visualization
+[https://catalog.cod.edu/programs-study/computer-information-science/data-analytics-certificate/]
+certificate prepares students for entry-level data analysis, setup and usage of
+business intelligence and data analysis solutions.
+
+
+DATABASE PROFICIENCY
+
+The Database Proficiency
+[https://catalog.cod.edu/programs-study/computer-information-science/database-proficiency-certificate/]
+certificate requires proficiency in using Windows.
+
+
+ENTERPRISE DATABASE PROFICIENCY
+
+The Enterprise Database Proficiency
+[https://catalog.cod.edu/programs-study/computer-information-science/enterprise-database-proficiency-certificate/]
+certificate recommends the completion of 4932 Desktop Database Proficiency
+certificate.
+
+
+GAME DESIGN AND DEVELOPMENT
+
+The Game Design and Development
+[https://catalog.cod.edu/programs-study/computer-information-science/game-design-development-certificate/]
+certificate will prepare the student for careers in video game design and
+development.
+
+
+GAME PROGRAMMING AND DEVELOPMENT
+
+The Game Programming and Development
+[https://catalog.cod.edu/programs-study/computer-information-science/game-programming-development-certificate/]
+certificate prepares the student to program and develop video games using
+programming languages and development tools used in the game industry.
+
+
+INTERNET OF THINGS (IOT) PROFICIENCY
+
+The Internet of Things (IoT) Proficiency
+[https://catalog.cod.edu/programs-study/computer-information-science/internet-of-things-proficiency-certificate/]
+certificate is designed for students who have already earned an associates or
+baccalaureate degree in a technical field and/or are employed in the technical
+industry.
+
+This certificate prepares students to design and develop applications using
+Internet connected single-board computers and sensor devices.
+
+
+IOS DEVELOPER PROFICIENCY
+
+The iOS Developer Proficiency
+[https://catalog.cod.edu/programs-study/computer-information-science/iphone-ipad-developer-proficiency-certificate/]
+certificate prepares the student to design and develop applications for Apple
+iOS platform in accordance with Apple development standards. 
+
+
+JAVA LANGUAGE PROFICIENCY
+
+The JAVA Language Proficiency
+[https://catalog.cod.edu/programs-study/computer-information-science/java-language-proficiency-certificate/]
+certificate requires 15 credits.
+
+
+LINUX
+
+The LINUX
+[https://catalog.cod.edu/programs-study/computer-information-science/linux-certificate/]
+certificate documents proficiency in the Linux operating system and its
+environment. 
+
+
+PYTHON LANGUAGE PROFICIENCY
+
+The Python Language Proficiency
+[https://catalog.cod.edu/programs-study/computer-information-science/python-language-proficiency-certificate/]
+certificate provides students with core competencies in the use of the Python
+Programming Language.
+
+Students are required to complete coursework that includes basic and advanced
+concepts in Python language programming, computer information systems, data
+structure application, Python standard library applications, Data science, and
+programming logic and design.
+
+
+SPREADSHEET PROFICIENCY
+
+This Windows based Spreadsheet Proficiency
+[https://catalog.cod.edu/programs-study/computer-information-science/spreadsheet-proficiency-certificate/]
+certificate prepares students to utilize spreadsheets, analyze data, and apply
+business intelligence tools in business applications.
+
+
+UNIX PROFICIENCY
+
+The UNIX Proficiency
+[https://catalog.cod.edu/programs-study/computer-information-science/unix-proficiency-certificate/]
+certificate requires 16 credits.
+
+
+VISUAL BASIC LANGUAGE PROFICIENCY
+
+The Visual BASIC Language Proficiency
+[https://catalog.cod.edu/programs-study/computer-information-science/visual-basic-language-proficiency-certificate/]
+certificate requires 15 credits.
+
+
+WEB CLIENT DEVELOPER
+
+The Web Client Developer
+[https://catalog.cod.edu/programs-study/computer-information-science/web-client-developer-certificate/]
+certificate provides the necessary skills and knowledge for client-side Website
+development.
+
+Learn to develop Websites using Hypertext Markup Language version 5 (HTML5),
+Cascading Style Sheets (CSS), and JavaScript. You will write code manually, as
+well as use graphical user interface (GUI) authoring tools, and program
+client-side, platform-independent solutions. 
+
+
+WEB PROGRAMMER
+
+The Web Programmer certificate
+[https://catalog.cod.edu/programs-study/computer-information-science/web-programmer-certificate/]
+requires 32 credits.
+
+
+WINDOWS NETWORK ADMINISTRATION
+
+The Windows Network Administration
+[https://catalog.cod.edu/programs-study/computer-information-science/windows-network-administration-certificate/]
+certificate for Information Technology (IT) professionals with the knowledge to
+design and implement a Microsoft network using Active Directory (AD). 
+
+
+COD STORIES
+
+Erna Gevondyan [/about/stories/students/images/erna_gevondyan.jpg]
+
+"I’m really grateful for the fact that COD’s flexibility with the offered
+classes and the overall structure helped me realize my true academic passion.” -
+Erna Gevondyan
+
+Erna's COD Story [/about/stories/students/gevondyan.aspx]
+
+
+COD STORIES
+
+Chris Antoon [/about/stories/students/images/kyrillos_antoon.jpg]
+
+"Don’t assume things—if you are not sure about something, ask, whether it is for
+advice on financial aid, classes you might pick and even the smallest thing like
+when to apply to other universities or programs.” - Chris Antoon
+
+Chris' COD Story [/about/stories/students/antoon.aspx]
+
+
+COD STORIES
+
+Lashawna Harris [/about/stories/students/images/lashawna_harris.jpg]
+
+“The best thing about the internship was doing the hands-on work. It was great
+to take the knowledge I had gained at COD and apply it in a professional
+setting, which prepared me for my future education and career." - Lashawna
+Harris
+
+Lashawna's COD Story [/about/stories/students/harris.aspx]
+
+
+COD STORIES
+
+Kyle Newman [/about/stories/students/images/kyle_newman.jpg]
+
+“I played around with computers a lot growing up, but I never really thought of
+it as a career. I guess you could say I had an ‘ah-ha’ moment where I realized I
+could have a career with something I'm passionate about." - Kyle Newman
+
+Kyle's COD Story [/about/stories/students/newman.aspx]
+
+
+COD STORIES
+
+Hajara-Yasmin Isa portrait
+[/about/stories/students/images/hajara_yasmin_isa.jpg]
+
+“Whether you are interested in professional, educational or personal
+development, COD is ready to help you succeed as long as you are willing to put
+in hard work." - Hajara-Yasmin Isa
+
+Hajara's COD Story [/about/stories/students/isa.aspx]
+
+--------------------------------------------------------------------------------
+
+
+GET STARTED TODAY
+
+The first step to getting started in Computer and Information Science is to
+apply for admission [https://admissions.cod.edu/].
+
+Program Course Map Options
+
+Academic and Career Pathways give you a roadmap to achieving your career goals.
+Follow a pathway based on your degree that outlines which classes you need to
+take and when so you graduate on time or move on to the next phase in your
+career.
+
+ * Application and Technical Support Specialist, Associate in Applied Science 
+   [https://catalog.cod.edu/programs-study/computer-information-science/application-technical-support-specialist-aas/]
+ * Business Productivity Software, Certificate
+   [https://catalog.cod.edu/programs-study/computer-information-science/business-productivity-software-certificate/]
+ * C++ Language Proficiency, Certificate
+   [https://catalog.cod.edu/programs-study/computer-information-science/c-language-proficiency-certificate/]
+ * Data Analytics, Certificate
+   [https://catalog.cod.edu/programs-study/computer-information-science/data-analytics-certificate/]
+ * Database Proficiency, Certificate
+   [https://catalog.cod.edu/programs-study/computer-information-science/database-proficiency-certificate/]
+ * Enterprise Database Proficiency, Certificate
+   [https://catalog.cod.edu/programs-study/computer-information-science/enterprise-database-proficiency-certificate/]
+ * Game Animation and Design, Associate in Applied Science
+   [https://catalog.cod.edu/programs-study/computer-information-science/game-animation-design-aas/]
+ * Game Design and Development, Associate in Applied Science
+   [https://catalog.cod.edu/programs-study/computer-information-science/game-design-development-aas/]
+ * Game Design and Development, Certificate
+   [https://catalog.cod.edu/programs-study/computer-information-science/game-design-development-certificate/]
+ * Game Programming and Development, Associate in Applied Science
+   [https://catalog.cod.edu/programs-study/computer-information-science/game-programming-development-aas/]
+ * Game Programming and Development, Certificate
+   [https://catalog.cod.edu/programs-study/computer-information-science/game-programming-development-certificate/]
+ * Internet of Things (IoT) Proficiency, Certificate
+   [https://catalog.cod.edu/programs-study/computer-information-science/internet-of-things-proficiency-certificate/]
+ * iPhone/iPad Developer Proficiency, Certificate
+   [https://catalog.cod.edu/programs-study/computer-information-science/iphone-ipad-developer-proficiency-certificate/]
+ * JAVA Language Proficiency, Certificate
+   [https://catalog.cod.edu/programs-study/computer-information-science/java-language-proficiency-certificate/]
+ * LINUX, Certificate
+   [https://catalog.cod.edu/programs-study/computer-information-science/linux-certificate/]
+ * Python Language Proficiency, Certificate
+   [https://catalog.cod.edu/programs-study/computer-information-science/python-language-proficiency-certificate/]
+ * Software Development, Associate in Applied Science
+   [https://catalog.cod.edu/programs-study/computer-information-science/software-development-aas/]
+ * Spreadsheet Proficiency, Certificate
+   [https://catalog.cod.edu/programs-study/computer-information-science/spreadsheet-proficiency-certificate/]
+ * UNIX Proficiency, Certificate
+   [https://catalog.cod.edu/programs-study/computer-information-science/unix-proficiency-certificate/]
+ * Visual BASIC Language Proficiency, Certificate
+   [https://catalog.cod.edu/programs-study/computer-information-science/visual-basic-language-proficiency-certificate/]
+ * Web Client Developer, Certificate
+   [https://catalog.cod.edu/programs-study/computer-information-science/web-client-developer-certificate/]
+ * Web Development, Associate in Applied Science
+   [https://catalog.cod.edu/programs-study/computer-information-science/web-development-aas/]
+ * Web Programmer, Certificate
+   [https://catalog.cod.edu/programs-study/computer-information-science/web-programmer-certificate/]
+ * Windows Network Administration, Certificate
+   [https://catalog.cod.edu/programs-study/computer-information-science/windows-network-administration-certificate/]
+
+Program Learning Outcomes
+
+Computer and Information Science Program graduates will:
+
+ * Demonstrate knowledge in the discipline of computer science.
+ * Demonstrate competency in software usage and Internet technologies.
+ * Explore emerging information technologies
+ * Demonstrate proficiency in problem-solving techniques
+ * Perform data analysis using technology.
+ * Comprehend software development best practices.
+ * Recognize importance of data privacy and information security.
+ * Practice ethical use of technology.
+
+
+
+
+WHERE YOU CAN TRANSFER
+
+College of DuPage has several computer and information science transfer
+agreements [/academics/transfer/programs/computer-information-science.aspx] in
+place with four-year colleges and universities to save you time, money and make
+the transfer process easier.
+
+Many of these agreements with other colleges and universities have specific
+course requirements and a pre-determined course plan that needs to be followed
+to be eligible to transfer. Contact a program faculty member or academic advisor
+to learn more as course requirements vary by institution.
+
+
+
+ 
+
+
+EXPLORE THE VISUALIZATION AND SIMULATION LAB
+
+outside of the Seaton Computing Center on a sunny day
+[/_resources/img/video/ssc-outside.jpg]https://www.youtube.com/embed/_LZtRjrU0yo?rel=0
+
+Located in the Seaton Computing Center, the Visualization and Simulation Lab is
+where students collaborate and develop their own video games to be played on PC
+and the latest video gaming consoles.
+
+
+CAREER INFORMATION
+
+Explore careers based on your interest, location and salary range or view top
+occupations by income.
+
+
+
+ 
+
+
+FREQUENTLY ASKED QUESTIONS
+
+Find answers to your frequently asked questions regarding the Computer and
+Information Science program.
+
+How do I know if CIS is right for me?
+
+Computer and Information Science is for you if you are interested in: 
+
+ * Programming, web development or game programming or design
+ * Excel, Access, SQL, Oracle or Linux/Unix
+ * Becoming more computer literate
+
+Computer and Information Technology (CIT)
+[/academics/programs/cit/index.aspx] is for you if you are
+interested in building and repairing computers and networks, Cisco or CompTIA
+certifications, computer forensics or network security.
+
+Graphic Design [/academics/programs/graphic-design/index.aspx] is for you if you
+are interested in Graphic Design, Illustrator and Photoshop.
+
+Office Technology Information (OFTI) [/academics/programs/ofti/index.aspx] is
+for you if you'd like to learn computers skills to become an administrative
+assistant, office manager, work in a medical office or be an event planner. 
+
+If you still aren’t sure which program would be best for you, ask a contact a
+CIS faculty member [/academics/programs/cis/contact.aspx].
+
+What computer courses would I take?
+
+You can refer to the table on the Getting Started
+[/academics/programs/cis/getting-started.aspx] page to help you determine which
+CIS course to take. If you still aren’t sure, ask a CIS faculty member.
+
+I don't have a computer at home. Can I still take a computer course?
+
+You do not need to have your own computer to take a computer course. Computer
+labs are available at the Glen Ellyn campus. The main computer lab is the
+Academic Computing Lab on the third floor of the Student Resource Center.
+
+Can I take any proficiency courses?
+The Testing Office [/academics/testing/index.aspx] offers the opportunity to
+gain credit for CIS classes by taking a proficiency exam. Currently there are
+proficiency tests available for these classes:
+ *  CIS 1120 (The Internet)
+ *  CIS 1130 (Windows Basics)
+ *  CIS 1150 (Introduction to CIS)
+ *  CIS 1160 (Windows Command Line)
+ *  CIS 1221 (Intro to Spreadsheets)
+ *  CIS 1230 (Microcomputer Database Application)
+ *  CIS 1400 (Programming Logic and Technique)
+
+ For a list of topics covered on the tests, contact Testing.
+[/academics/testing/index.aspx]
+
+ 
+Students walking on campus
+[https://www.cod.edu/_resources/img/three-column-card/international-estimated-expenses.jpg]
+
+
+ADMISSIONS
+
+Tour campus, attend an information session and apply today.
+
+[https://www.cod.edu/admission/index.aspx]
+Student smiling working on homework
+[https://www.cod.edu/_resources/img/three-column-card/honors.jpg]
+
+
+TUITION & SCHOLARSHIPS
+
+Discover the cost of college, apply for financial aid or learn about payment
+plans.
+
+[https://www.cod.edu/costs/]
+Students taking a photo with mascot
+[https://www.cod.edu/_resources/img/three-column-card/the-edge-program.jpg]
+
+
+STUDENT LIFE
+
+Join a leadership program or club and learn about new student orientation.
+
+[https://www.cod.edu/student_life/index.aspx]
+computer icon
+[https://www.cod.edu/_resources/img/icons/pathways/business-and-information-technology.png]https://catalog.cod.edu/programs/#filter=.filter_4
+
+Business and Information Technology
+
+
+
+Apply Now
+[https://admissions.cod.edu/RecruitNewWFE/Account/Login?ReturnUrl=%2fRecruitNewWFE]
+
+Contact the CIS Program [/academics/programs/cis/contact.aspx]
+
+Current Students [/academics/programs/cis/current-students.aspx]
+
+
+
+ * College of DuPage [/_resources/img/global/logo-white.svg] /
+ * 425 Fawell Blvd., Glen Ellyn, IL 60137 (630) 942-2800 (Main)
+   [tel:+1-630-942-2800]
+   (630) 942-3000 (Student Services) [tel:+1-630-942-3000]
+ * Apply [https://admissions.cod.edu/]
+ * Map & Directions [/about/visitor-information/maps-directions/index.aspx]
+ * Directory [/faculty/index.aspx]
+ * Campus Hours [/about/visitor-information/hours.aspx]
+ * COD Centers [/about/visitor-information/centers/]
+ * * https://www.facebook.com/collegeofdupage
+   * https://twitter.com/collegedupage
+   * https://www.youtube.com/user/CollegeofDuPage
+   * https://www.linkedin.com/school/college-of-dupage/
+   * https://www.flickr.com/photos/codnewsroom/
+   * https://www.instagram.com/collegeofdupage/
+   * https://www.tiktok.com/@college_of_dupage/
+
+ * Legal & Consumer Information
+   [/about/administration/consumer_legal_information/index.aspx]
+ * Jobs [/about/humanresources/index.aspx]
+ * Police Department [/about/police_department/index.aspx]
+ * Contact COD [/about/contact.aspx]
+ * Media Contacts [/news/contact.aspx]
+ * A-Z Index [/a-to-z.aspx]
+ * Library [https://library.cod.edu/]
+ * Bookstore [/academics/bookstore.aspx]
+
+ * McAninch Arts Center [https://www.atthemac.org/]
+ * WDCB Public Radio [https://wdcb.org/]
+ * Veterans Services [/student_life/resources/veterans/index.aspx]
+ * Español
+   [/student_life/resources/csdi/latino_outreach/index_spanish_language.aspx]
+ * Access & Accommodations
+   [/student_life/resources/access-accommodations/index.aspx]
+ * MyACCESS [https://myaccess.cod.edu/]
+ * COD NOW Newsletter [/gateways/cod-now/index.aspx]
+
+© 2023 College of DuPage
+[https://www.facebook.com/tr?id=277801059754640&ev=PageView&noscript=1]
+©
+[https://a.cms.omniupdate.com/11/?skin=cod&account=main&site=www-2019&action=de&path=/academics/programs/cis/index.pcf]

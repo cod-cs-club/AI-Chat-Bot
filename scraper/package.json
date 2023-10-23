@@ -12,7 +12,9 @@
   "dependencies": {
     "cheerio": "^1.0.0-rc.12",
     "colors": "^1.4.0",
+    "html-to-text": "^9.0.5",
     "node-fetch": "^2.7.0",
+    "pdf-parse-fork": "^1.2.0",
     "retry": "^0.13.1",
     "url": "^0.11.3"
   }
