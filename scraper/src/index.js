@@ -1,15 +1,13 @@
 import fetch from 'node-fetch'
 import fs from 'fs'
 import cheerio from 'cheerio'
-import pdf from 'pdf-parse-fork';
-import { convert } from 'html-to-text';
+import pdf from 'pdf-parse-fork'
+import { convert } from 'html-to-text'
 import 'colors'
 
-console.clear()
-console.log('Starting scraper...'.gray)
+import './logger.js'
 
 const baseUrl = 'https://www.cod.edu'
-const allLinks = new Set()
 
 const WHITELIST_DOMAINS = [
   'www.cod.edu',
@@ -26,11 +24,17 @@ const BLACKLIST_MATCHES = [
   // 'library.cod.edu'
 ]
 
-const stats = {
+const OUT_FOLDER = 'scraped/'
+
+const allLinks = new Set()
+
+export const stats = {
   linksCrawled: 0,
   linksSaved: 0,
-  linksSkipped: 0,
 }
+
+scrape(baseUrl, 1)
+scrape('https://www.cod.edu/student_life/resources/counseling/pdf/student_planning/student-planning-as-21-23.pdf', 1)
 
 async function scrape(url, retrySeconds) {
   try {
@@ -40,21 +44,19 @@ async function scrape(url, retrySeconds) {
     const res = await fetch(url, { rejectUnauthorized: false })
     const html = await res.text()
     const $ = cheerio.load(html)
-    const links = []
-if(url.endsWith('.pdf')){
-  pdf(res).then(function(data) {
-    const urlToFilePath = 'data/'+new URL(url).hostname.replace(/\//g, '-')+new URL(url).pathname.replace(/\//g, '-')+'.txt';
-    fs.appendFile(urlToFilePath, url+"\n"+data.text, (err) => {})
-});
-}else{
-//save html page in foler with link
-const urlToFilePath = 'data/'+new URL(url).hostname.replace(/\//g, '-')+new URL(url).pathname.replace(/\//g, '-')+'.txt';
-Promise.resolve(convert(html))
-  .then(result => {
-    if(typeof result!='string'){
-    console.log(typeof result)}
-    fs.appendFile(urlToFilePath, url+'\n'+result, (err) => {})
-  });
+
+    if (url.endsWith('.pdf')) {
+      const data = await pdf(res)
+      const urlToFilePath = OUT_FOLDER + new URL(url).hostname.replace(/\//g, '-') + new URL(url).pathname.replace(/\//g, '-') + '.txt'
+      fs.appendFile(urlToFilePath, url + "\n" + data.text, (err) => {})
+      return
+    }
+
+    //save html page in foler with link
+    const urlToFilePath = OUT_FOLDER + new URL(url).hostname.replace(/\//g, '-') + new URL(url).pathname.replace(/\//g, '-') + '.txt'
+    const result = await Promise.resolve(convert(html))
+    fs.appendFile(urlToFilePath, url + '\n' + result, (err) => {})
+    
     $('a').each((_, element) => {
       let link = $(element).attr('href')
       if (link[0] == '/') {
@@ -68,7 +70,6 @@ Promise.resolve(convert(html))
           return
         }
         const newUrl = new URL(link)
-        
         if (!WHITELIST_DOMAINS.includes(newUrl.hostname)) {
           return
         }
@@ -84,13 +85,13 @@ Promise.resolve(convert(html))
           stats.linksSaved++
           scrape(link, 1)
         }
-      } catch (error) {
+      }
+      catch (error) {
         console.log('Not a link: ' + link)
-        stats.linksSkipped++
       }
     })
   }
-  } catch (err) {
+  catch (err) {
     // console.error(err) // errors confusing, so commented out
     setTimeout(() => {
       if (retrySeconds < 32) {
@@ -101,22 +102,3 @@ Promise.resolve(convert(html))
     }, retrySeconds * 1000)
   }
 }
-
-scrape(baseUrl,1)
-scrape('https://www.cod.edu/student_life/resources/counseling/pdf/student_planning/student-planning-as-21-23.pdf', 1)
-
-// Prints status message
-function printStats() {
-  console.clear()  //keep this as clear because there are some font logs that can be cleared
-  process.stdout.cursorTo(0)
-  process.stdout.write(
-    'Scraping...'.gray +
-    ` ${stats.linksCrawled} crawled`.cyan +
-    ` ${stats.linksSaved} saved`.green +
-    ` ${stats.linksSkipped} skipped`.yellow
-  )
-  process.stdout.cursorTo(0)
-}
-
-// Print status 20 times per second
-setInterval(printStats, 50)
