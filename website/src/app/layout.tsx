@@ -1,8 +1,10 @@
+import Navbar from '@/components/Navbar'
+import Footer from '@/components/Footer'
 import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
-import './globals.scss'
+import '@/styles/globals.scss'
 
-const mainFont = Inter({
+import { Ubuntu } from 'next/font/google'
+const mainFont = Ubuntu({
   subsets: ['latin'],
   weight: ['400', '700'],
 })
@@ -16,7 +18,13 @@ export const metadata: Metadata = {
 export default function RootLayout({ children, }: { children: React.ReactNode }) {
   return (
     <html lang="en">
-      <body className={mainFont.className}>{children}</body>
+      <body className={mainFont.className}>
+        <div id="contentBody">
+          <Navbar />
+          {children}
+        </div>
+        <Footer />
+      </body>
     </html>
   )
 }
