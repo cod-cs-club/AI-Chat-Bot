@@ -1,4 +1,5 @@
 import fetch from "node-fetch";
+// @ts-ignore
 import fs from "fs";
 import cheerio from "cheerio";
 // @ts-ignore - no declaration file
@@ -35,12 +36,15 @@ var index = 0;
 //exponentialBackoff is the amount of time per thread to wait before scraping again --> measure for slowing down scrape if website complains.
 //It expotentially backs off
 async function scrape(exponentialBackoff: number) {
+  var url = ''
+  var amountOfRetries = 0
   try {
     try {
       var url = links[index][0];
       var amountOfRetries = links[index][1];
     } catch {
-      throw new Error("shutting down thread");
+      console.log('shutting down thread')
+      return
     }
     index++;
     stats.linksCrawled++;
@@ -90,8 +94,8 @@ async function scrape(exponentialBackoff: number) {
                   return;
                 }
               }
-              if (!links.includes(link)) {
-                links.push([link, amountOfRetries]);
+              if (!links.includes([link,0])) {
+                links.push([link, 0]);
                 fs.appendFile('links.txt', link + '\n', (err) => {})
               }
             }
@@ -107,11 +111,8 @@ async function scrape(exponentialBackoff: number) {
       scrape(exponentialBackoff); //no errors continue scraping immediately
     }
   } catch (err) {
-    if(err.code!="UNABLE_TO_VERIFY_LEAF_SIGNATURE"){
-    console.error(err);
-    }
-    if (err == "shutting down thread") {
-      return;
+    if(err.code!="UNABLE_TO_VERIFY_LEAF_SIGNATURE"){ //certificate errors are on COD NOT ME!!!!!!!!!!!
+      console.error(err);
     }
     if (exponentialBackoff > 32) {
       console.log("Too many errors: you might be accessing COD website too fast. Shutting thread down.",);
