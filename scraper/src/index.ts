@@ -1,7 +1,9 @@
 import fetch from "node-fetch";
 import fs from "fs";
 import cheerio from "cheerio";
+// @ts-ignore - no declaration file
 import pdf from "pdf-parse-fork";
+// @ts-ignore - no declaration file
 import { convert } from "html-to-text";
 import "colors";
 import "./logger.js";
@@ -25,17 +27,14 @@ export const stats = {
   linksSaved: 0,
 };
 //link=[[url, amountofRetries]]
-var links = [
+const links: [string, number][] = [
   ["https://www.cod.edu", 0],
-  [
-    "https://www.cod.edu/student_life/resources/counseling/pdf/student_planning/student-planning-as-21-23.pdf",
-    0,
-  ],
+  ["https://www.cod.edu/student_life/resources/counseling/pdf/student_planning/student-planning-as-21-23.pdf", 0],
 ];
 var index = 0;
 //exponentialBackoff is the amount of time per thread to wait before scraping again --> measure for slowing down scrape if website complains.
 //It expotentially backs off
-async function scrape(exponentialBackoff) {
+async function scrape(exponentialBackoff: number) {
   try {
     try {
       var url = links[index][0];

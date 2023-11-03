@@ -16,8 +16,7 @@ export default function Home() {
           <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex, obcaecati rerum ratione sit magnam aspernatur?</p>
           <div className={styles.links}>
             <Link href="/chat" className={styles.chat}>
-              <Icon name="chat" />
-              Start Chat &rarr;
+              <Icon name="chat" />Start Chat &rarr;
             </Link>
             <Link href="/about" className={styles.about}>Learn More</Link>
           </div>
