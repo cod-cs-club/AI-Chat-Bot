@@ -58,7 +58,7 @@ async function scrape(exponentialBackoff: number) {
   stats.linksCrawled++
 
   // Exponential backoff
-  if (exponentialBackoff > 0) {
+  if (exponentialBackoff > 1) {
     await new Promise(resolve => setTimeout(resolve, exponentialBackoff * 1000))
   }
 
@@ -108,7 +108,9 @@ async function scrape(exponentialBackoff: number) {
         }
       })
     }
-    if (exponentialBackoff != 1) {
+
+    // After successful scrape
+    if (exponentialBackoff > 1) {
       scrape(exponentialBackoff / 2)
     } else {
       scrape(exponentialBackoff) //no errors continue scraping immediately
@@ -121,11 +123,10 @@ async function scrape(exponentialBackoff: number) {
     }
     if (exponentialBackoff > 32) {
       console.log("Too many errors: you might be accessing COD website too fast. Shutting thread down.",)
-      return
     }
-    if (amountOfRetries < 5) {
+    else if (amountOfRetries < 5) {
       links.push([url, amountOfRetries + 1])
-      console.log("too many retries, skipping link.")
+      // console.log("too many retries, skipping link.")
     }
     scrape(exponentialBackoff * 2)
   }
