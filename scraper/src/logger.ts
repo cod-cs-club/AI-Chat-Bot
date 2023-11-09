@@ -1,4 +1,5 @@
-import { stats } from './index.js'
+import config from '../config.json'
+import { stats, numberOfThreads } from './index.js'
 
 console.clear()
 console.log('Starting scraper...'.gray)
@@ -9,7 +10,8 @@ function printStats() {
   process.stdout.write('\u001b[s') // Save cursor position
   process.stdout.cursorTo(0, 0)
   process.stdout.write(
-    `Scraping...`.gray +
+    `(${(numberOfThreads)} / ${config.numberOfThreads}) threads`.bgMagenta.black +
+    ` ...`.gray +
     ` ${stats.linksCrawled} crawled`.cyan +
     ` ${stats.linksSaved} saved`.green +
     ` ${stats.linksCrawled - stats.linksSaved} skipped`.yellow +

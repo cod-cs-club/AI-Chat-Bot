@@ -1,0 +1,18 @@
+{
+  "numberOfThreads": 60,
+  "startingLinks": [
+    "https://www.cod.edu",
+    "https://www.cod.edu/student_life/resources/counseling/pdf/student_planning/student-planning-as-21-23.pdf"
+  ],
+  "allowedDomains": [
+    "www.cod.edu",
+    "catalog.cod.edu"
+  ],
+  "blacklistMatches": [
+    "/about/police_department/pdf/incident_reports/",
+    "/about/administration/planning_and_reporting_documents/pdf/disbursements",
+    "/student_life/resources/counseling/pdf/student_planning/student-planning",
+    "/faculty/websites/pearson/documents/student-portfolios/",
+    "/about/purchasing"
+  ]
+}

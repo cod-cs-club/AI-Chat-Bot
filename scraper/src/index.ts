@@ -1,137 +1,127 @@
-import fetch from "node-fetch";
-// @ts-ignore
-import fs from "fs";
-import cheerio from "cheerio";
-// @ts-ignore - no declaration file
-import pdf from "pdf-parse-fork";
-// @ts-ignore - no declaration file
-import { convert } from "html-to-text";
-import "colors";
-import "./logger.js";
-const WHITELIST_DOMAINS = ["www.cod.edu", "catalog.cod.edu"];
-const BLACKLIST_MATCHES = [
-  "https://www.cod.edu/about/police_department/pdf/incident_reports/",
-  "https://www.cod.edu/about/administration/planning_and_reporting_documents/pdf/disbursements",
-  "https://www.cod.edu/student_life/resources/counseling/pdf/student_planning/student-planning",
-  "https://www.cod.edu/faculty/websites/pearson/documents/student-portfolios/",
-  "https://www.cod.edu/about/purchasing",
-  // 'dc.cod.edu',
-  // 'library.cod.edu'
-];
+import sqlite3 from "sqlite3"
+import cheerio from "cheerio"
+import pdf from "pdf-parse-fork"
+import { convert } from "html-to-text"
+import "colors"
 
-const OUT_FOLDER = "scraped/";
+import config from "../config.json"
+import "./logger.js"
 
-var numberOfThreads = 60;
+const db = new sqlite3.Database("./documents.db")
+
+// Reset/create table documents if it doesn't exist
+db.serialize(() => {
+  db.run("DROP TABLE IF EXISTS documents")
+  db.run(`CREATE TABLE IF NOT EXISTS documents (
+    url TEXT PRIMARY KEY,
+    content TEXT NOT NULL
+  )`, (error) => {
+    if (error) throw error
+    startScraping()
+  })
+})
 
 export const stats = {
   linksCrawled: 0,
   linksSaved: 0,
-};
-//link=[[url, amountofRetries]]
-const links: [string, number][] = [
-  ["https://www.cod.edu", 0],
-  ["https://www.cod.edu/student_life/resources/counseling/pdf/student_planning/student-planning-as-21-23.pdf", 0],
-];
-var index = 0;
-//exponentialBackoff is the amount of time per thread to wait before scraping again --> measure for slowing down scrape if website complains.
-//It expotentially backs off
-async function scrape(exponentialBackoff: number) {
-  var url = ''
-  var amountOfRetries = 0
-  try {
-    try {
-      var url = links[index][0];
-      var amountOfRetries = links[index][1];
-    } catch {
-      console.log('shutting down thread')
-      return
-    }
-    index++;
-    stats.linksCrawled++;
-    //console.log(`Fetching ${url}...`)
-    const res = await fetch(url, { rejectUnauthorized: false });
-    const html = await res.text();
-    const $ = cheerio.load(html);
-
-    if (url.endsWith(".pdf")) {
-      const data = await pdf(res);
-      const urlToFilePath =
-        OUT_FOLDER +
-        new URL(url).hostname.replace(/\//g, "-") +
-        new URL(url).pathname.replace(/\//g, "-") +
-        ".txt";
-      fs.appendFile(urlToFilePath, url + "\n" + data.text, (err) => {});
-      stats.linksSaved++;
-    } else {
-      //save html page in foler with link
-      const urlToFilePath =
-        OUT_FOLDER +
-        new URL(url).hostname.replace(/\//g, "-") +
-        new URL(url).pathname.replace(/\//g, "-") +
-        ".txt";
-      const result = await Promise.resolve(convert(html));
-      fs.appendFile(urlToFilePath, url + "\n" + result, (err) => {});
-      stats.linksSaved++;
-
-      $("a").each((_, element) => {
-        var link = $(element).attr("href");
-        if (!link) {
-          return;
-        }
-        if (link[0] == "/") {
-          link = "https://www.cod.edu" + link; //for relative URLs
-        }
-        if (link.startsWith("..")) {
-          link = url + link; //check if this is right, might need to cut off the ..
-        }
-        if (!link.endsWith(".zip")) {
-          try {
-            var newUrl = new URL(link);
-            if (WHITELIST_DOMAINS.includes(newUrl.hostname)) {
-              // Loop through BLACKLIST_MATCHES to check for includes on each individual string, not just generally in BLACKLIST_MATCHES
-              for (let i = 0; i < BLACKLIST_MATCHES.length; i++) {
-                if (link.includes(BLACKLIST_MATCHES[i])) {
-                  return;
-                }
-              }
-              if (!links.includes([link,0])) {
-                links.push([link, 0]);
-                fs.appendFile('links.txt', link + '\n', (err) => {})
-              }
-            }
-          } catch {
-            return; //not a link
-          }
-        }
-      });
-    }
-    if (exponentialBackoff != 1) {
-      scrape(exponentialBackoff / 2);
-    } else {
-      scrape(exponentialBackoff); //no errors continue scraping immediately
-    }
-  } catch (err) {
-    if(err.code!="UNABLE_TO_VERIFY_LEAF_SIGNATURE"){ //certificate errors are on COD NOT ME!!!!!!!!!!!
-      console.error(err);
-    }
-    if (exponentialBackoff > 32) {
-      console.log("Too many errors: you might be accessing COD website too fast. Shutting thread down.",);
-    } else {
-      if (amountOfRetries < 5) {
-        links.push([url, amountOfRetries + 1]);
-        console.log("too many retries, skipping link.");
-      }
-      scrape(exponentialBackoff * 2);
-    }
-  }
 }
 
-//boot 60 scraping threads --> in the future maybe, depending on ram check how many concurrent requests can be made and go from there
-var threads = setInterval(function () {
-  console.log("starting thread...");
-  scrape(1);
-  numberOfThreads--;
-  if (numberOfThreads == 0) {
-    clearInterval(threads);
+export let numberOfThreads = 0
+
+// Start creating scraping threads
+function startScraping() {
+  const threadsLoop = setInterval(() => {
+    scrape(1)
+    numberOfThreads++
+    if (numberOfThreads >= config.numberOfThreads) {
+      console.log("Finished creating all threads...".green)
+      clearInterval(threadsLoop)
+    }
+  }, 1000)
+}
+
+const links: [string, number][] = config.startingLinks.map(link => [link, 0])
+let index = 0
+
+// exponentialBackoff is the amount of time per thread to wait before scraping again --> measure for slowing down scrape if website complains.
+// It expotentially backs off
+async function scrape(exponentialBackoff: number) {
+  if (!links[index]) {
+    console.log("Shutting down thread.")
+    return
   }
-}, 1000);
+
+  const url = links[index][0]
+  const amountOfRetries = links[index][1]
+
+  index++
+  stats.linksCrawled++
+
+  try {
+    const res = await fetch(url)
+
+    if (url.endsWith(".pdf")) { // Is probably a PDF
+      const { text } = await pdf(res)
+      db.run("INSERT INTO documents (url, content) VALUES (?, ?)", [url, text])
+      stats.linksSaved++
+    }
+    else { // Is probably a HTML page
+      const html = await res.text()
+      const $ = cheerio.load(html)
+      const result = await Promise.resolve(convert(html))
+
+      db.run("INSERT INTO documents (url, content) VALUES (?, ?)", [url, result])
+      stats.linksSaved++
+
+      // Find all links on page and add them to the links array
+      $("a").each((_, element) => {
+        let link = $(element).attr("href")
+        if (!link) return
+        if (link.endsWith(".zip")) return
+        if (link[0] == "/") { // Is a relative URL
+          const originURL = res.url.slice(-1) == "/" ? res.url.slice(0, -1) : res.url // Needs to remove trailing slash
+          link = originURL + link
+          // console.log(originURL, link)
+        }
+        // if (link.startsWith("..")) {
+        //   link = url + link //check if this is right, might need to cut off the ..
+        // }
+        try {
+          const domain = new URL(link).hostname
+          if (!config.allowedDomains.includes(domain)) return
+          for (let i = 0; i < config.blacklistMatches.length; i++) {
+            if (link.includes(config.blacklistMatches[i])) return
+          }
+
+          // If link is not already in links array, add it
+          if (!links.some(linkArr => linkArr[0] == link)) {
+            links.push([link, 0])
+          }
+        }
+        catch {
+          return //not a link
+        }
+      })
+    }
+    if (exponentialBackoff != 1) {
+      scrape(exponentialBackoff / 2)
+    } else {
+      scrape(exponentialBackoff) //no errors continue scraping immediately
+    }
+  }
+  catch (err) {
+    if (!err || typeof err !== "object") return
+    if ('code' in err && err.code != "UNABLE_TO_VERIFY_LEAF_SIGNATURE") { //certificate errors are on COD NOT ME!!!!!!!!!!!
+      console.error(err)
+    }
+    if (exponentialBackoff > 32) {
+      console.log("Too many errors: you might be accessing COD website too fast. Shutting thread down.",)
+      return
+    }
+    if (amountOfRetries < 5) {
+      links.push([url, amountOfRetries + 1])
+      console.log("too many retries, skipping link.")
+    }
+    scrape(exponentialBackoff * 2)
+  }
+}
