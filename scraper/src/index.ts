@@ -57,6 +57,11 @@ async function scrape(exponentialBackoff: number) {
   index++
   stats.linksCrawled++
 
+  // Exponential backoff
+  if (exponentialBackoff > 0) {
+    await new Promise(resolve => setTimeout(resolve, exponentialBackoff * 1000))
+  }
+
   try {
     const res = await fetch(url)
 
