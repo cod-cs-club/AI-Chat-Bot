@@ -1,6 +1,7 @@
 # Web Scraper
 /scraper/node_modules
-/scraper/scraped/*
+/scraper/documents.db
+/scraper/documents.db-journal
 
 # AI Bot
 /bot/something

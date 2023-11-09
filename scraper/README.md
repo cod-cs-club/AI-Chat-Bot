@@ -5,12 +5,14 @@ A Node.js application that crawls COD's website and compiles all relevant text i
 - `Node.js` >= v18
 
 ## Run Application
-To start the application, simply run `npm start`.
+To start the application, simply run:
+1. `npm install`: One-time install al dependencies.
+2. `npm start`: To actually run the script.
 
 ## Configuration
 To easily change the behavior of the scraper, edit the `config.json` file.
 
-- `numberOfThreads`: The maxiumum amount of scraping threads at one time, might need to be adjusted based off computer specs or desired speed. (Type: number)
+- `numberOfThreads`: The maximum amount of scraping threads at one time, might need to be adjusted based off computer specs or desired speed. (Type: number)
 - `startingLinks`: List of links from where the application will start crawling from. (Type: string[])
 - `whitelistDomains`: List of domains that the application is allowed to scrape, if a page references a domain not in the list, it will ignore it. (Type: string[])
 - `blacklistMatches`: List of blacklisted text matches, if any part of a link contains text from this list, it will be ignored. (Type: string[])

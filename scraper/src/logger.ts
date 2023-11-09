@@ -22,8 +22,3 @@ function printStats() {
 
 // Print status 20 times per second
 setInterval(printStats, 1000 / 20)
-
-// setTimeout(() => {
-//   console.log('test msg 1')
-//   console.log('test msg 2')
-// }, 2000)
