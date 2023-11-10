@@ -3,8 +3,8 @@ import Footer from '@/components/Footer'
 import type { Metadata } from 'next'
 import '@/styles/globals.scss'
 
-import { Ubuntu } from 'next/font/google'
-const mainFont = Ubuntu({
+import { Open_Sans } from 'next/font/google'
+const mainFont = Open_Sans({
   subsets: ['latin'],
   weight: ['400', '700'],
 })

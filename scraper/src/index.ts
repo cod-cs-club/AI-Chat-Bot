@@ -63,7 +63,8 @@ async function scrape(exponentialBackoff: number) {
   }
 
   try {
-    const res = await fetch(url, { rejectUnauthorized: false, poo: true });
+    // Certificate errors in the future can be solved by creating a custom agent that ignore untrusted certificates
+    const res = await fetch(url)
 
     if (url.endsWith(".pdf")) { // Is probably a PDF
       const { text } = await pdf(res)
