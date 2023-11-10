@@ -63,7 +63,7 @@ async function scrape(exponentialBackoff: number) {
   }
 
   try {
-    const res = await fetch(url)
+    const res = await fetch(url, { rejectUnauthorized: false, poo: true });
 
     if (url.endsWith(".pdf")) { // Is probably a PDF
       const { text } = await pdf(res)
