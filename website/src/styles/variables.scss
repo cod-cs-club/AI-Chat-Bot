@@ -9,17 +9,15 @@ $text-color-2: rgb(200, 200, 200);
 $text-color-3: rgb(150, 150, 150);
 
 // BACKGROUND COLORS
-$bg-color-dark-1: #000000; // BACKGROUND-COLOR DARK MODE | ALSO WILL NEED TO ADD LIGHT MODE
-$bg-color-light-1: #FFFFFF; // BACKGROUND-COLOR LIGHT MODE | TEMPORARY
-
+$bg-color-1: #000000; // BACKGROUND-COLOR DARK MODE | ALSO WILL NEED TO ADD LIGHT MODE
 // CONTAINER COLORS
-$bg-color-container-1: #111111; // PROMPT CONTAINER (OPACITY 50%)
-$bg-color-container-2: #002502; // AI BOT CHAT CONTAINER (OPACITY 50%)
-$bg-color-container-3: #005E06; // USER CHAT CONTAINER (OPACITY 50%)
+$bg-color-2: #111111; // PROMPT CONTAINER (OPACITY 50%)
+$chat-color-1: #002502; // AI BOT CHAT CONTAINER (OPACITY 50%)
+$chat-color-2: #005E06; // USER CHAT CONTAINER (OPACITY 50%)
 
 // LINER GRADIENTS COLORS | BACKGROUND
-$bg-gradient-dark-1: linear-gradient(#001F02, #001301); // Note: the navbar should be transparent, you should be able to see below | NAVBAR
-$bg-gradient-dark-2: #227226; // In the design it is with less than 50% opacity. Also, we could use the transparent image for his gradient | BACKGROUND
+$bg-gradient-1: linear-gradient(#001F02, #001301); // Note: the navbar should be transparent, you should be able to see below | NAVBAR
+$bg-gradient-2: #227226; // In the design it is with less than 50% opacity. Also, we could use the transparent image for his gradient | BACKGROUND
 // LINEAR GRADIENTS COLORS | BUTTON
 $button-gradient-1: linear-gradient(#001501, #001F02); // BUTTON GRADIENT BACKGROUND
 
