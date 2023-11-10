@@ -9,24 +9,14 @@
   align-items: stretch;
   gap: 1rem;
   padding: 0 1rem;
-  background: rgb(0, 0, 5);
-  border-bottom: 1px solid $border-color-1;
+  background: rgba(0, 0, 0, 0.5);
   overflow: hidden;
 
-  .logo {
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-    text-decoration: none;
-    
-    h1 {
-      font-size: 1.7rem;
-      letter-spacing: 2px;
-      font-weight: 400;
-      color: $text-color-1;
-      
-      span { color: $theme-color-1; }
-    }
+  h1 {
+    font-size: 1.7rem;
+    letter-spacing: 2px;
+    font-weight: 700;
+    color: $text-color-1;
   }
 
   .navLinks {
@@ -44,7 +34,7 @@
       color: rgb(200, 200, 200);
 
       &:hover { color: rgb(230, 230, 230); }
-      &.active { color: $theme-color-1; }
+      &.active { font-weight: 700; }
     }
   }
 }

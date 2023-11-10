@@ -7,56 +7,56 @@
   .card {
     display: flex;
     align-items: flex-start;
-    gap: 1rem;
-    max-width: 500px;
+    gap: 2rem;
+    // max-width: 600px;
     padding: 2rem;
-    border: 1px solid $border-color-1;
+    // border: 1px solid $border-color-1;
     border-radius: 1rem;
 
-    .right {
-      h1 {
-        font-size: 2.5rem;
-        font-weight: 400;
+    .content {
+      h2 {
+        font-size: 3.5rem;
+        font-weight: 700;
         letter-spacing: 2px;
         color: $text-color-1;
-
-        span { color: $theme-color-1; }
       }
 
       p {
-        margin: 1rem 0;
-        font-size: 1.1rem;
+        font-size: 1.3rem;
         color: $text-color-2;
       }
 
       .links {
         display: flex;
         align-items: center;
-        gap: 1.5rem;
+        gap: 1rem;
+        margin-top: 1rem;
 
         a.chat {
           display: flex;
           align-items: center;
           gap: 0.3rem;
+          padding: 0.5rem 2rem;
+          text-decoration: none;
+          font-weight: 400;
+          font-size: 1.1rem;
+          color: $text-color-1;
+          background: $button-gradient-1;
+          border: 1px solid $border-color-1;
+          border-radius: 1rem;
+          transition: 300ms ease-in-out;
+          backdrop-filter: blur(2px);
+  
+          &:hover { filter: brightness(1.2); }
+        }
+
+        a.about {
           padding: 0.5rem;
           text-decoration: none;
           font-size: 1.1rem;
           color: $text-color-1;
-          background: none;
-          border: 1px solid $border-color-2;
-          border-radius: 0.5rem;
-          transition: 300ms ease-in-out;
-  
-          &:hover { background: $theme-color-1; }
-        }
 
-        a.about {
-          text-decoration: none;
-          font-size: 1.1rem;
-          color: $text-color-2;
-          transition: 300ms ease-in-out;
-
-          &:hover { color: $theme-color-1; text-decoration: underline; }
+          &:hover { text-decoration: underline; }
         }
       }
     }

@@ -18,10 +18,7 @@ export default function Navbar() {
 
   return (
     <header className={styles.navbar}>
-      <Link href="/" className={styles.logo}>
-        <Image src="/logo.png" alt="Logo" width="40" height="40" />
-        <h1><span>COD</span>GPT</h1>
-      </Link>
+      <h1>ChapGPT</h1>
       <nav className={styles.navLinks}>
         {links.map(link => (
           <Link
