@@ -37,7 +37,7 @@ function startScraping() {
       console.log("Finished creating all threads...".green)
       clearInterval(threadsLoop)
     }
-  }, 1000)
+  }, 3000)
 }
 
 const links: [string, number][] = config.startingLinks.map(link => [link, 0])
