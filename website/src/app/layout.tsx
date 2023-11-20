@@ -1,7 +1,7 @@
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
 import type { Metadata } from 'next'
-import '@/styles/globals.scss'
+import './globals.css'
 
 import { Open_Sans } from 'next/font/google'
 const mainFont = Open_Sans({
@@ -19,11 +19,11 @@ export default function RootLayout({ children, }: { children: React.ReactNode })
   return (
     <html lang="en">
       <body className={mainFont.className}>
-        <div id="contentBody">
+        {/* <div id="contentBody"> */}
           <Navbar />
           {children}
-        </div>
-        <Footer />
+        {/* </div> */}
+        {/* <Footer /> */}
       </body>
     </html>
   )
