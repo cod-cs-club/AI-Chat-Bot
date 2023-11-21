@@ -12,7 +12,7 @@ connection = sqlite3.connect('documents.db')
 # Create a cursor object to execute SQL queries
 cursor = connection.cursor()
 # Execute a simple query (replace with your own query)
-cursor.execute("SELECT * FROM your_table_name")
+cursor.execute("SELECT * FROM documents")
 
 # Fetch a result
 result = cursor.fetchone()
@@ -31,36 +31,28 @@ connection.close()
 
 from http.server import SimpleHTTPRequestHandler, HTTPServer
 from urllib.parse import parse_qs
+class MyRequestHandler(SimpleHTTPRequestHandler):
+    def do_POST(request_handler):
+        print('Recieved Request')
+        # Send a response header
+        request_handler.send_response(200)
+        request_handler.send_header('Content-type', 'text/plain')
+        request_handler.end_headers()
 
-def handle_post_request(request_handler):
-    print('Recieved Request')
-    # Send a response header
-    request_handler.send_response(200)
-    request_handler.send_header('Content-type', 'text/plain')
-    request_handler.end_headers()
+        # Read the POST data
+        content_length = int(request_handler.headers['Content-Length'])
+        post_data = request_handler.rfile.read(content_length)
 
-    # Read the POST data
-    content_length = int(request_handler.headers['Content-Length'])
-    post_data = request_handler.rfile.read(content_length)
+        # Customize this part to process the POST data as needed
+        response_text = post_data.decode('utf-8')
+        
+        #get document context here... (Eliott)
+        #response=askQuestion(response_text,'')
+        request_handler.wfile.write("hey".encode('utf-8'))
 
-    # Customize this part to process the POST data as needed
-    response_text = post_data.decode('utf-8')
-    
-    #get document context here... (Eliott)
-    request_handler.wfile.write(askQuestion(response_text,).encode('utf-8'))
-
-
-
-def handle_request(request_handler):
-    if request_handler.command == 'POST':
-        handle_post_request(request_handler)
-    
 # this sets it up as https://localhost:8000
 host = "127.0.0.1"
 port = 8000
-with HTTPServer((host, port), SimpleHTTPRequestHandler) as httpd:
+with HTTPServer((host, port), MyRequestHandler) as httpd:
     print(f"Serving on {host}:{port}")
-
-    # Override the default handle_request method
-    httpd.handle_request = lambda: handle_request(httpd)
     httpd.serve_forever()
