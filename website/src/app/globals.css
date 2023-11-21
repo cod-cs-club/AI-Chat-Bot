@@ -1,0 +1,78 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --navbar-height: 60px;
+
+  --theme-color-1: rgb(80, 180, 80);
+
+  /* TEXT COLORS */
+  --text-color-1: rgb(255, 255, 255);
+  --text-color-2: rgb(200, 200, 200);
+  --text-color-3: rgb(150, 150, 150);
+
+  /* BACKGROUND COLORS */
+  --bg-color-1: #000000;
+  /* CONTAINER COLORS */
+  --bg-color-2: #111111; /*  PROMPT CONTAINER (OPACITY 50%) */
+  --chat-color-1: #002502; /* AI BOT CHAT CONTAINER (OPACITY 50%) */
+  --chat-color-2: #005E06; /* USER CHAT CONTAINER (OPACITY 50%) */
+
+  /* LINER GRADIENTS COLORS | BACKGROUND */
+  --bg-gradient-1: linear-gradient(#001F02, #001301); /*  Note: the navbar should be transparent, you should be able to see below | NAVBAR */
+  /* USER BACKDROP-FILTER WITH BLUR */
+  --bg-gradient-2: #227226; /* In the design it is with less than 50% opacity. Also, we could use the transparent image for his gradient | BACKGROUND */
+  /* LINEAR GRADIENTS COLORS | BUTTON */
+  --button-gradient-1: linear-gradient(#001501, #001F02); /* BUTTON GRADIENT BACKGROUND */
+
+  /* BORDER COLORS */
+  --border-color-1: #227226; /* BUTTON BORDER */
+}
+
+html, body {
+  font-size: 16px;
+  background: var(--bg-color-1);
+  color: white;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+/* --- Animations --- */
+.chat-user-bubble-appear {
+  opacity: 0;
+  scale: 0;
+  translate: 30px 0;
+  animation: chat-user-bubble-appear 0.3s ease-out forwards;
+}
+@keyframes chat-user-bubble-appear {
+  0% { opacity: 0; scale: 0; translate: 30px 0; }
+  100% { opacity: 1; scale: 1; translate: 0 0; }
+}
+
+.chat-bot-bubble-appear {
+  opacity: 0;
+  scale: 0;
+  translate: -30px 0;
+  animation: chat-bot-bubble-appear 0.3s ease-out forwards;
+  animation-delay: 500ms;
+}
+@keyframes chat-bot-bubble-appear {
+  0% { opacity: 0; scale: 0; translate: -30px 0; }
+  100% { opacity: 1; scale: 1; translate: 0 0; }
+}
+
+/* Loading dots */
+.loading-dot-1 { animation: loading-dot 1s infinite; }
+.loading-dot-2 { animation: loading-dot 1s infinite; animation-delay: 333ms; }
+.loading-dot-3 { animation: loading-dot 1s infinite; animation-delay: 666ms; }
+.loading-dot-all { opacity: 0.5; scale: 0.75; }
+@keyframes loading-dot {
+  0% { opacity: 0.5; scale: 0.75; }
+  50% { opacity: 1; scale: 1; }
+  100% { opacity: 0.5; scale: 0.75; }
+}
