@@ -1,2 +1,4 @@
 transformers
 chromadb
+sqlite3
+urllib
