@@ -11,3 +11,7 @@
 /website/.next
 /website/.env
 /website/.env*.local
+
+# TEMP
+/offload/
+test.py

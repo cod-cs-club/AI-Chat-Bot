@@ -5,7 +5,7 @@ import Icon from '@/components/Icon'
 // Home page
 export default function Home() {
   return (
-    <main className="h-[100vh] flex flex-col justify-center items-center bg-bg-1 bg-home-bg bg-blend-darken bg-no-repeat bg-center bg-cover">
+    <main className="h-[100vh] flex flex-col justify-center items-center bg-bg-1 bg-home-bg bg-blend-darken bg-no-repeat bg-center bg-cover blur-2">
       <div className="flex items-start gap-4 p-8 bg-gray-950 rounded-lg">
         <div>
           <h2 className="text-5xl font-bold">WELCOME</h2>
