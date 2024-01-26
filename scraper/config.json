@@ -1,7 +1,8 @@
 {
-  "numberOfThreads": 60,
+  "numberOfThreads": 10,
   "startingLinks": [
     "https://www.cod.edu",
+    "https://catalog.cod.edu",
     "https://www.cod.edu/student_life/resources/counseling/pdf/student_planning/student-planning-as-21-23.pdf"
   ],
   "allowedDomains": [
@@ -9,6 +10,13 @@
     "catalog.cod.edu"
   ],
   "blacklistMatches": [
+    "javascript:",
+    "archive",
+    "tel:",
+    "mailto:",
+    "/#",
+    "cod.edu/calendar",
+    "/faculty/index",
     "/about/police_department/pdf/incident_reports/",
     "/about/administration/planning_and_reporting_documents/pdf/disbursements",
     "/student_life/resources/counseling/pdf/student_planning/student-planning",

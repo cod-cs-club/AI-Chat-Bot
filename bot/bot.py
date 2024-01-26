@@ -1,58 +1,79 @@
-from transformers import AutoModelForQuestionAnswering, AutoTokenizer, pipeline
-model_name = "deepset/tinyroberta-squad2"
-nlp = pipeline('question-answering', model=model_name, tokenizer=model_name)
+# import documents from documents.db and load them to ChromaDB Vector library
+import pathlib
+import chromadb
+import os
+chromadb_load_boolean=not os.path.exists(f"{pathlib.Path(__file__).parent.resolve()}\chromadb")
+client = chromadb.PersistentClient(f"{pathlib.Path(__file__).parent.resolve()}\chromadb")
+collection = client.get_or_create_collection(name="collection")
 
-def askQuestion(question, context): 
-  return nlp({"question": question, "context": context})["answer"]
+#if the folder is empty...
+if chromadb_load_boolean:
+  print('converting documents to embeddings...      (This may take a bit)')
+  import sqlite3
+  connection = sqlite3.connect('documents.db')
+  cursor = connection.cursor()
+  cursor.execute("SELECT * FROM documents")
 
-
-import sqlite3
-# Connect to the SQLite database
-connection = sqlite3.connect('documents.db')
-# Create a cursor object to execute SQL queries
-cursor = connection.cursor()
-# Execute a simple query (replace with your own query)
-cursor.execute("SELECT * FROM documents")
-
-# Fetch a result
-result = cursor.fetchone()
-while result:
-    # fetch each result at a time
-    #send to Eliott's chromaDB function
+  result = cursor.fetchone()
+  id=0
+  while result:
+  # Word Vectorize Documents
+    collection.add(
+    documents=[result[1]],
+    metadatas=[{"url": result[0]}],
+    ids=[f"id{id}"]
+    )
+    id+=1
     result = cursor.fetchone()
 # Close the cursor and connection
-cursor.close()
-connection.close()
+  cursor.close()
+  connection.close()
+
+def get_documents(prompt,results):
+    #shape is [[''],[''],['']] converting to ['','','']
+    documents = [item for sublist in collection.query(query_texts=[prompt], n_results=results)['documents'] for item in sublist]
+    return '\n\n'.join(documents)
+
+# load Google Gemini API key
+from dotenv import load_dotenv
+load_dotenv()
+import google.generativeai as genai
+genai.configure(api_key=os.getenv("API_KEY"))
+model = genai.GenerativeModel('gemini-pro')
+
+messages=[]
+def ask_question(question):
+  messages.append({'role':'User','text':question})
+  prompts=""
+  chat_history=""
+  for message in messages:
+    chat_history+=message['role']+": "+message['text']
+    if(message['role']=='User'):
+      prompts+=message['text']+'\n'
+  prompt=f"""You are a helpful assistant created to help a student attending the College of Dupage. If you do not know an answer, tell the user "I'm sorry I cannot find that information online.". Here is the context:
+ \"\"\"{get_documents(prompts,10)}\"\"\"\n\n"""
+  response= model.generate_content(prompt+chat_history).text
+  messages.append({'role':'Assistant','text':response})
+  return response
+
+while True:
+  print(ask_question(input("Question: ")))
+# What does COD stand for?
 
 
+#from flask import Flask, jsonify, request
+#app = Flask(__name__)
+#
+#@app.route('/', methods=['POST'])
+#def handle_request():
+#    if request.method == 'POST':
+#        print(request)
+#        # Assuming the incoming data is plain text
+#        request_data = request.data.decode('utf-8')
+#        print(request_data)
+#        # Process the data as needed
+#        response_data = {'received_data': request_data}
+#        
+#        return jsonify(response_data)
 
-
-
-
-from http.server import SimpleHTTPRequestHandler, HTTPServer
-from urllib.parse import parse_qs
-class MyRequestHandler(SimpleHTTPRequestHandler):
-    def do_POST(request_handler):
-        print('Recieved Request')
-        # Send a response header
-        request_handler.send_response(200)
-        request_handler.send_header('Content-type', 'text/plain')
-        request_handler.end_headers()
-
-        # Read the POST data
-        content_length = int(request_handler.headers['Content-Length'])
-        post_data = request_handler.rfile.read(content_length)
-
-        # Customize this part to process the POST data as needed
-        response_text = post_data.decode('utf-8')
-        
-        #get document context here... (Eliott)
-        #response=askQuestion(response_text,'')
-        request_handler.wfile.write("hey".encode('utf-8'))
-
-# this sets it up as https://localhost:8000
-host = "127.0.0.1"
-port = 8000
-with HTTPServer((host, port), MyRequestHandler) as httpd:
-    print(f"Serving on {host}:{port}")
-    httpd.serve_forever()
+#app.run(debug=True)

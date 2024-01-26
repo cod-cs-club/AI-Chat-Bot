@@ -1,4 +1,6 @@
 transformers
 chromadb
-sqlite3
-urllib
+flask
+transformers
+tensorflow
+google-generativeai

@@ -3,9 +3,10 @@ import cheerio from "cheerio"
 import pdf from "pdf-parse-fork"
 import { convert } from "html-to-text"
 import "colors"
-
+import fetch from "node-fetch";
 import config from "../config.json"
 import "./logger.js"
+import fs from 'fs';
 
 const db = new sqlite3.Database("./documents.db")
 
@@ -40,7 +41,7 @@ function startScraping() {
   }, 3000)
 }
 
-const links: [string, number][] = config.startingLinks.map(link => [link, 0])
+var links: [string, number][] = config.startingLinks.map(link => [link, 0])
 let index = 0
 
 // Function that creates a scraping thread
@@ -65,6 +66,7 @@ async function scrape(exponentialBackoff: number) {
   try {
     // Certificate errors in the future can be solved by creating a custom agent that ignore untrusted certificates
     const res = await fetch(url)
+    fs.appendFile('links.txt',url+'\n',() => {})
 
     if (url.endsWith(".pdf")) { // Is probably a PDF
       const { text } = await pdf(res)
@@ -88,13 +90,19 @@ async function scrape(exponentialBackoff: number) {
         if (link.startsWith("#")) return
         if (link.endsWith(".zip")) return
         
-        if (!link.startsWith("http")) { // Is probably a relative URL
-          const originURL = res.url.slice(-1) == "/" ? res.url.slice(0, -1) : res.url // Needs to remove trailing slash
-          link = originURL + link
+        if (!link.startsWith("http")) { // Is probably a relative URL --> build it
+          let baseUrl = url.replace(/\.(com|edu).*/, '.$1');
+          link = baseUrl + link
         }
-
-        const domain = res.url.split("/")[2]
-        if (!config.allowedDomains.includes(domain)) return
+        
+        function containsSubstring(inputString, substringList) {
+          return substringList.some(substring => inputString.includes(substring));
+        }
+        
+        if(!containsSubstring(link, config.allowedDomains)){return}
+        
+        if (!containsSubstring(link, config.allowedDomains)) return
+        
         for (let i = 0; i < config.blacklistMatches.length; i++) {
           if (link.includes(config.blacklistMatches[i])) return
         }
@@ -114,10 +122,9 @@ async function scrape(exponentialBackoff: number) {
     }
   }
   catch (err) {
-    if (!err || typeof err !== "object") return
-    if ('code' in err && err.code != "UNABLE_TO_VERIFY_LEAF_SIGNATURE") { //certificate errors are on COD NOT ME!!!!!!!!!!!
-      console.error(err)
-    }
+    if(err.code == "UNABLE_TO_VERIFY_LEAF_SIGNATURE") return; //certificate errors are on COD NOT ME!!!!!!!!!!!
+    console.log(err)
+    console.log(url)
     if (exponentialBackoff > 32) {
       console.log("Too many errors: you might be accessing COD website too fast. Shutting thread down.",)
     }
