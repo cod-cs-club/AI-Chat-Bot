@@ -52,6 +52,7 @@ def ask_question(question):
       prompts+=message['text']+'\n'
   prompt=f"""You are a helpful assistant created to help a student attending the College of Dupage. If you do not know an answer, tell the user "I'm sorry I cannot find that information online.". Here is the context:
  \"\"\"{get_documents(prompts,10)}\"\"\"\n\n"""
+  #model.count_tokens("why is sky blue?")
   response= model.generate_content(prompt+chat_history).text
   messages.append({'role':'Assistant','text':response})
   return response

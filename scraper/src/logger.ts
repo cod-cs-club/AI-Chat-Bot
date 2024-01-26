@@ -1,5 +1,5 @@
 import config from '../config.json'
-import { stats, numberOfThreads } from './index.js'
+import { stats, numberOfThreads, ramUsage } from './index.js'
 
 console.clear()
 console.log('Starting scraper...'.gray)
@@ -15,6 +15,7 @@ function printStats() {
     ` ${stats.linksCrawled} crawled`.cyan +
     ` ${stats.linksSaved} saved`.green +
     ` ${stats.linksCrawled - stats.linksSaved} skipped`.yellow +
+    ` ${ramUsage}% RAM in use`.white +
     `\n`
   )
   process.stdout.write('\u001b[u') // Restore cursor position

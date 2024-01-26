@@ -1,5 +1,5 @@
 {
-  "numberOfThreads": 10,
+  "numberOfThreads": 30,
   "startingLinks": [
     "https://www.cod.edu",
     "https://catalog.cod.edu",
@@ -10,6 +10,21 @@
     "catalog.cod.edu"
   ],
   "blacklistMatches": [
+    ".jpg",
+    ".jpeg",
+    ".png",
+    ".svg",
+    "00665600",
+    "cod.edu/field",
+    "/pdf/financial-reports/",
+    "https://catalog.cod.edu/pdf/College-of-DuPage-2023-2024-Academic-Catalog-(pre-Spring-2024-Addendum).pdf",
+    "planning_and_reporting_documents/pdf/financial-reports/",
+    "/campus-departments/facilities-department/facilities-master-plan/",
+    "/conference-event-services/",
+    "/campus-services/",
+    "stories/faculty",
+    "academics/learning_commons/mathematics-assistance",
+    "stories/students",
     "javascript:",
     "archive",
     "tel:",

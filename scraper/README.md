@@ -6,7 +6,7 @@ A Node.js application that crawls COD's website and compiles all relevant text i
 
 ## Run Application
 To start the application, simply run:
-1. `npm install`: One-time install al dependencies.
+1. `npm install`: One-time install all dependencies.
 2. `npm start`: To actually run the script.
 
 ## Configuration
