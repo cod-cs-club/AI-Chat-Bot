@@ -17,7 +17,12 @@
 # TEMP
 /offload/
 test.py
-scraper/documents.db
 bot/old code/links.txt
 bot/old code/skipped_links.txt
 scraper/documents.db
+bot/chromadb/67c5ed58-a038-46de-a2ed-8aefdb93fb08/data_level0.bin
+bot/chromadb/67c5ed58-a038-46de-a2ed-8aefdb93fb08/header.bin
+bot/chromadb/67c5ed58-a038-46de-a2ed-8aefdb93fb08/index_metadata.pickle
+bot/chromadb/67c5ed58-a038-46de-a2ed-8aefdb93fb08/length.bin
+bot/chromadb/67c5ed58-a038-46de-a2ed-8aefdb93fb08/link_lists.bin
+bot/chromadb/chroma.sqlite3

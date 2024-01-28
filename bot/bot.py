@@ -4,7 +4,7 @@ import chromadb
 import os
 chromadb_load_boolean=not os.path.exists(f"{pathlib.Path(__file__).parent.resolve()}\chromadb")
 client = chromadb.PersistentClient(f"{pathlib.Path(__file__).parent.resolve()}\chromadb")
-collection = client.get_or_create_collection(name="collection")
+collection = client.get_or_create_collection(name="collection", metadata={"hnsw:space": "cosine"})
 
 #if the folder is empty...
 if chromadb_load_boolean:
@@ -41,40 +41,42 @@ import google.generativeai as genai
 genai.configure(api_key=os.getenv("API_KEY"))
 model = genai.GenerativeModel('gemini-pro')
 
-messages=[]
-def ask_question(question):
-  messages.append({'role':'User','text':question})
+def ask_question(messages):
+  #messages.append({'role':'User','text':question})
   prompts=""
   chat_history=""
-  for message in messages:
-    chat_history+=message['role']+": "+message['text']
-    if(message['role']=='User'):
-      prompts+=message['text']+'\n'
-  prompt=f"""You are a helpful assistant created to help a student attending the College of Dupage. If you do not know an answer, tell the user "I'm sorry I cannot find that information online.". Here is the context:
- \"\"\"{get_documents(prompts,10)}\"\"\"\n\n"""
-  #model.count_tokens("why is sky blue?")
-  response= model.generate_content(prompt+chat_history).text
-  messages.append({'role':'Assistant','text':response})
-  return response
+  if(type(messages)==list):
+    for message in messages:
+      chat_history+=message['role']+": "+message['text']+'\n'
+      if(message['role']=='user'):
+        prompts+=message['text']+'\n'
+    prompt=f"""You are a helpful assistant created to help a student attending the College of Dupage. If you do not know an answer, tell the user "I'm sorry I cannot find that information online.".
 
-while True:
-  print(ask_question(input("Question: ")))
+{chat_history}     
+    
+Here is the context:
+  \"\"\"{get_documents(prompts,20)}\"\"\"\n\n"""
+    #print(get_documents(prompt,20))
+    #model.count_tokens("why is sky blue?")
+    return model.generate_content(prompt).text
+  else:
+     return "Messages should be a list"
+
+#while True:
+#  print(ask_question([{'role':'user','text':input("Question: ")}]))
 # What does COD stand for?
 
+from flask import Flask, request, jsonify
+app = Flask(__name__)
+@app.route('/api', methods=['POST'])
+def api_endpoint():
+    try:
+        request_data = request.get_json()
+        return ask_question(request_data.messages), 200
 
-#from flask import Flask, jsonify, request
-#app = Flask(__name__)
-#
-#@app.route('/', methods=['POST'])
-#def handle_request():
-#    if request.method == 'POST':
-#        print(request)
-#        # Assuming the incoming data is plain text
-#        request_data = request.data.decode('utf-8')
-#        print(request_data)
-#        # Process the data as needed
-#        response_data = {'received_data': request_data}
-#        
-#        return jsonify(response_data)
+    except Exception as e:
+        # Handle exceptions if any
+        error_message = {"error": str(e)}
+        return jsonify(error_message), 500
 
-#app.run(debug=True)
+app.run(debug=True)
