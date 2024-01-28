@@ -42,7 +42,7 @@ genai.configure(api_key=os.getenv("API_KEY"))
 model = genai.GenerativeModel('gemini-pro')
 
 def ask_question(messages):
-  #messages.append({'role':'User','text':question})
+  # messages.append({'role':'User','text':question})
   prompts=""
   chat_history=""
   if(type(messages)==list):
@@ -55,7 +55,7 @@ def ask_question(messages):
 {chat_history}     
     
 Here is the context:
-  \"\"\"{get_documents(prompts,20)}\"\"\"\n\n"""
+  \"\"\"{get_documents(prompts,15)}\"\"\"\n\n"""
     #print(get_documents(prompt,20))
     #model.count_tokens("why is sky blue?")
     return model.generate_content(prompt).text
@@ -72,11 +72,11 @@ app = Flask(__name__)
 def api_endpoint():
     try:
         request_data = request.get_json()
-        return ask_question(request_data.messages), 200
+        return ask_question(request_data), 200
 
     except Exception as e:
         # Handle exceptions if any
         error_message = {"error": str(e)}
         return jsonify(error_message), 500
 
-app.run(debug=True)
+app.run(debug=False)

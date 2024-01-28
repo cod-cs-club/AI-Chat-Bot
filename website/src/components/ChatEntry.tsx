@@ -14,19 +14,20 @@ export default function ChatEntry({ message, }: { message: string }) {
   useEffect(() => {
     fetchReply()
   }, [])
-
+//TODO: instead of feeding a test body, feed all the past messages in that format to the fetch request.
   async function fetchReply() {
     try {
-      // Temp artificial delay
-      await new Promise(resolve => setTimeout(resolve, 5000)) // 5s
-
-      const response = await fetch('/api/chat', {
+      const response = await fetch('/api', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ message })
+        body: JSON.stringify([{'role':'user','text':message}])
       })
-      const { reply } = await response.json()
-      // TODO: Don't know structure of reply yet
+
+  // Temp artificial delay
+  await new Promise(resolve => setTimeout(resolve, 3000)) // 5s
+
+      const reply  = await((await response).text())
+      setBotReply(reply)
     }
     catch (error: any) {
       console.error(error)
