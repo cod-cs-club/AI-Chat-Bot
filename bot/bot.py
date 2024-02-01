@@ -6,6 +6,12 @@ chromadb_load_boolean=not os.path.exists(f"{pathlib.Path(__file__).parent.resolv
 client = chromadb.PersistentClient(f"{pathlib.Path(__file__).parent.resolve()}\chromadb")
 collection = client.get_or_create_collection(name="collection", metadata={"hnsw:space": "cosine"})
 
+import tiktoken
+encoding = tiktoken.get_encoding("cl100k_base") #using chatGPT-3.5-turbo's tokenizer for speed, and to avoid Google API rate limit
+def count_tokens(string):
+    print(len(encoding.encode(string)))
+    return len(encoding.encode(string))
+
 #if the folder is empty...
 if chromadb_load_boolean:
   print('converting documents to embeddings...      (This may take a bit)')
@@ -32,51 +38,68 @@ if chromadb_load_boolean:
 def get_documents(prompt,results):
     #shape is [[''],[''],['']] converting to ['','','']
     documents = [item for sublist in collection.query(query_texts=[prompt], n_results=results)['documents'] for item in sublist]
-    return '\n\n'.join(documents)
+    final_context=""
+    for document in documents:
+      if(count_tokens(document)<=3000):
+        final_context+=document+'\n\n'
+    return final_context
 
 # load Google Gemini API key
 from dotenv import load_dotenv
 load_dotenv()
 import google.generativeai as genai
 genai.configure(api_key=os.getenv("API_KEY"))
-model = genai.GenerativeModel('gemini-pro')
+generation_config = {"temperature": 0}
+model = genai.GenerativeModel('gemini-pro',generation_config=generation_config,)
 
-def ask_question(messages):
-  # messages.append({'role':'User','text':question})
-  prompts=""
-  chat_history=""
+def chat_completion(messages):
   if(type(messages)==list):
+    prompts=""
+    chat=[{'role':'user','parts':[f'You are a helpful assistant created to help a student attending the College of Dupage (COD). Please relate everything to COD. Say "Okay" if you understand.\n\nHere is the context:\n']},
+          {'role':'model','parts':['Okay']}]
     for message in messages:
-      chat_history+=message['role']+": "+message['text']+'\n'
       if(message['role']=='user'):
-        prompts+=message['text']+'\n'
-    prompt=f"""You are a helpful assistant created to help a student attending the College of Dupage. If you do not know an answer, tell the user "I'm sorry I cannot find that information online.".
-
-{chat_history}     
-    
-Here is the context:
-  \"\"\"{get_documents(prompts,15)}\"\"\"\n\n"""
-    #print(get_documents(prompt,20))
-    #model.count_tokens("why is sky blue?")
-    return model.generate_content(prompt).text
+          prompts+=message['text']+'\n'
+          chat.append({'role':'user','parts':[message['text']]})
+      else:
+          chat.append({'role':'model','parts':[message['text']]})
+    chat[0]['parts'][0]+=get_documents(prompts,7)
+    chat.pop(-1)
+    convo = model.start_chat(history=chat)
+    convo.send_message(messages[-1]['text'])
+    return(convo.last.text)
   else:
-     return "Messages should be a list"
-
+    return "Messages should be a list"
 #while True:
 #  print(ask_question([{'role':'user','text':input("Question: ")}]))
 # What does COD stand for?
 
 from flask import Flask, request, jsonify
+
 app = Flask(__name__)
-@app.route('/api', methods=['POST'])
+
+def add_cors_headers(response):
+    response.headers['Access-Control-Allow-Origin'] = '*'
+    response.headers['Access-Control-Allow-Methods'] = 'POST, OPTIONS'
+    response.headers['Access-Control-Allow-Headers'] = 'Content-Type'
+    return response
+
+@app.route('/api', methods=['POST', 'OPTIONS'])
 def api_endpoint():
+    if request.method == 'OPTIONS':
+        # Handling OPTIONS request
+        response = jsonify({"message": "OPTIONS request successful"})
+        return add_cors_headers(response), 200
+
     try:
         request_data = request.get_json()
-        return ask_question(request_data), 200
+        return chat_completion(request_data), 200, {"Access-Control-Allow-Origin": "*"}
 
     except Exception as e:
         # Handle exceptions if any
-        error_message = {"error": str(e)}
-        return jsonify(error_message), 500
+        print(e)
+        error_message = {"error": f"{e}"}
+        response = jsonify(error_message)
+        return add_cors_headers(response), 500
 
-app.run(debug=False)
+app.run(debug=True)
