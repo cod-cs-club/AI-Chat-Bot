@@ -1,3 +1,4 @@
+import { MainProvider } from '@/contexts/MainContext'
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
 import type { Metadata } from 'next'
@@ -19,11 +20,13 @@ export default function RootLayout({ children, }: { children: React.ReactNode })
   return (
     <html lang="en">
       <body className={mainFont.className}>
-        {/* <div id="contentBody"> */}
-          <Navbar />
-          {children}
-        {/* </div> */}
-        {/* <Footer /> */}
+        <MainProvider>
+          {/* <div id="contentBody"> */}
+            <Navbar />
+            {children}
+          {/* </div> */}
+          {/* <Footer /> */}
+        </MainProvider>
       </body>
     </html>
   )

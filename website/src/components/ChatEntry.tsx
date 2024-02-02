@@ -4,29 +4,35 @@ import { useState, useEffect } from 'react'
 import Image from 'next/image'
 // import type { ChatMessage } from '@/types'
 
-// Chat Entry: Handles display of both user message, and the bot's reply.
+// Chat Entry: Handles display of both user message and the bot's reply.
 // Also is responsible for fetching the bot's response, and showing errors.
 // You should think of these as tied, because there is only 1 bot reply for each user message.
-export default function ChatEntry({ message, }: { message: string }) {
+export default function ChatEntry({ message }: { message: string }) {
   const [botReply, setBotReply] = useState<string>('')
   const [botError, setBotError] = useState<null | string>(null)
 
   useEffect(() => {
     fetchReply()
   }, [])
-//TODO: instead of feeding a test body, feed all the past messages in that format to the fetch request.
+
+  //TODO: instead of feeding a test body, feed all the past messages in that format to the fetch request.
   async function fetchReply() {
     try {
       const response = await fetch('/api', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify([{'role':'user','text':message}])
+        body: JSON.stringify([
+          {'role':'user','text':message},
+          // {'role':'bot','text':message},
+          // {'role':'user','text':message}
+          // newest goes at end
+        ])
       })
 
-  // Temp artificial delay
-  await new Promise(resolve => setTimeout(resolve, 3000)) // 5s
+      // Temp artificial delay
+      await new Promise(resolve => setTimeout(resolve, 3000)) // 5s
 
-      const reply  = await((await response).text())
+      const reply  = await response.text()
       setBotReply(reply)
     }
     catch (error: any) {
