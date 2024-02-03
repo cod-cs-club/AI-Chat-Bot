@@ -1,12 +1,14 @@
 'use client'
 
 import { useState, useRef } from 'react'
+import { useMainContext } from '@/contexts/MainContext'
 import ChatEntry from '@/components/ChatEntry'
 import Icon from '@/components/Icon'
 
 // Chat page
 export default function Chat() {
-  const [messages, setMessages] = useState<string[]>([])
+  const { messages, sendMessage } = useMainContext()
+
   const [input, setInput] = useState<string>('')
 
   const messagesContainerRef = useRef<HTMLDivElement>(null)
@@ -14,7 +16,7 @@ export default function Chat() {
   async function submitMessage(event: React.FormEvent<HTMLFormElement>) {
     event.preventDefault()
     if (!input) return
-    setMessages((messages) => [...messages, input])
+    sendMessage(input)
     setInput('')
 
     // Scroll to bottom of messages container
@@ -30,8 +32,8 @@ export default function Chat() {
     <main className="h-screen flex flex-col pt-navbar-height">
       {/* Chat messages container */}
       <div ref={messagesContainerRef} className="flex-1 flex-col p-4 pb-8 overflow-y-auto overflow-x-hidden">
-        {messages.map((message, index) => (
-          <ChatEntry key={index} message={message} />
+        {messages.map(message => (
+          <ChatEntry key={message.id} message={message} />
         ))}
       </div>
       <div className="h-[120px] p-8 border-t-[1px] border-t-gray-800">
