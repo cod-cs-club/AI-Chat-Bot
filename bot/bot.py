@@ -55,7 +55,7 @@ model = genai.GenerativeModel('gemini-pro',generation_config=generation_config,)
 def chat_completion(messages):
   if(type(messages)==list):
     prompts=""
-    chat=[{'role':'user','parts':[f'You are a helpful assistant created to help a student attending the College of Dupage (COD). Please relate everything to COD and remember the current semester is Spring 2024. Say "Okay" if you understand.\n\nHere is the context:\n']},
+    chat=[{'role':'user','parts':[f'You are a helpful assistant created to help a student attending the College of Dupage (COD). Please relate everything to COD. The current semester is Spring 2024. Say "Okay" if you understand.\n\nHere is the context:\n']},
           {'role':'model','parts':['Okay']}]
     for message in messages:
       if(message['role']=='user'):
@@ -89,12 +89,13 @@ def add_cors_headers(response):
 def api_endpoint():
     if request.method == 'OPTIONS':
         # Handling OPTIONS request
+        
         response = jsonify({"message": "OPTIONS request successful"})
-        return {'message':add_cors_headers(response)}, 200
+        return add_cors_headers(response), 200
 
     try:
         request_data = request.get_json()
-        return add_cors_headers(chat_completion(request_data)), 200, {"Access-Control-Allow-Origin": "*"}
+        return add_cors_headers(jsonify({'message':chat_completion(request_data)})), 200
 
     except Exception as e:
         # Handle exceptions if any
