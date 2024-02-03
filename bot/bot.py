@@ -4,7 +4,7 @@ import chromadb
 import os
 chromadb_load_boolean=not os.path.exists(f"{pathlib.Path(__file__).parent.resolve()}\chromadb")
 client = chromadb.PersistentClient(f"{pathlib.Path(__file__).parent.resolve()}\chromadb")
-collection = client.get_or_create_collection(name="collection", metadata={"hnsw:space": "cosine"})
+collection = client.get_or_create_collection(name="collection") #, metadata={"hnsw:space": "cosine"}
 
 import tiktoken
 encoding = tiktoken.get_encoding("cl100k_base") #using chatGPT-3.5-turbo's tokenizer for speed, and to avoid Google API rate limit
@@ -82,6 +82,7 @@ def add_cors_headers(response):
     response.headers['Access-Control-Allow-Origin'] = '*'
     response.headers['Access-Control-Allow-Methods'] = 'POST, OPTIONS'
     response.headers['Access-Control-Allow-Headers'] = 'Content-Type'
+    response.headers['Content-Type'] = 'application/json'
     return response
 
 @app.route('/api', methods=['POST', 'OPTIONS'])
@@ -89,7 +90,7 @@ def api_endpoint():
     if request.method == 'OPTIONS':
         # Handling OPTIONS request
         response = jsonify({"message": "OPTIONS request successful"})
-        return add_cors_headers(response), 200
+        return {'message':add_cors_headers(response)}, 200
 
     try:
         request_data = request.get_json()
