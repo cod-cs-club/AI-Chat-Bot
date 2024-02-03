@@ -55,7 +55,7 @@ model = genai.GenerativeModel('gemini-pro',generation_config=generation_config,)
 def chat_completion(messages):
   if(type(messages)==list):
     prompts=""
-    chat=[{'role':'user','parts':[f'You are a helpful assistant created to help a student attending the College of Dupage (COD). Please relate everything to COD. Say "Okay" if you understand.\n\nHere is the context:\n']},
+    chat=[{'role':'user','parts':[f'You are a helpful assistant created to help a student attending the College of Dupage (COD). Please relate everything to COD and remember the current semester is Spring 2024. Say "Okay" if you understand.\n\nHere is the context:\n']},
           {'role':'model','parts':['Okay']}]
     for message in messages:
       if(message['role']=='user'):
