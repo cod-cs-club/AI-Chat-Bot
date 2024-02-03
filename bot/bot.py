@@ -103,8 +103,7 @@ def api_endpoint():
     except Exception as e:
         # Handle exceptions if any
         print(e)
-        error_message = {"error": f"{e}"}
-        response = jsonify(error_message)
+        response = jsonify({"error": f"{e}"})
         return add_cors_headers(response), 500
 
 app.run(debug=True)
