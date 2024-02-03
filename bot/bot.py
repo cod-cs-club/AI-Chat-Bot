@@ -9,7 +9,6 @@ collection = client.get_or_create_collection(name="collection") #, metadata={"hn
 import tiktoken
 encoding = tiktoken.get_encoding("cl100k_base") #using chatGPT-3.5-turbo's tokenizer for speed, and to avoid Google API rate limit
 def count_tokens(string):
-    print(len(encoding.encode(string)))
     return len(encoding.encode(string))
 
 #if the folder is empty...
@@ -39,9 +38,13 @@ def get_documents(prompt,results):
     #shape is [[''],[''],['']] converting to ['','','']
     documents = [item for sublist in collection.query(query_texts=[prompt], n_results=results)['documents'] for item in sublist]
     final_context=""
+    
+    total_tokens=0
     for document in documents:
-      if(count_tokens(document)<=3000):
+      token_amount=count_tokens(document)
+      if(token_amount<=5000 and total_tokens<=20000):
         final_context+=document+'\n\n'
+        total_tokens+=token_amount
     return final_context
 
 # load Google Gemini API key
@@ -63,7 +66,7 @@ def chat_completion(messages):
           chat.append({'role':'user','parts':[message['text']]})
       else:
           chat.append({'role':'model','parts':[message['text']]})
-    chat[0]['parts'][0]+=get_documents(prompts,7)
+    chat[0]['parts'][0]+=get_documents(prompts,15)
     chat.pop(-1)
     convo = model.start_chat(history=chat)
     convo.send_message(messages[-1]['text'])
