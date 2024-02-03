@@ -94,7 +94,7 @@ def api_endpoint():
 
     try:
         request_data = request.get_json()
-        return chat_completion(request_data), 200, {"Access-Control-Allow-Origin": "*"}
+        return add_cors_headers(chat_completion(request_data)), 200, {"Access-Control-Allow-Origin": "*"}
 
     except Exception as e:
         # Handle exceptions if any
