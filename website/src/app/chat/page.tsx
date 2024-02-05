@@ -2,6 +2,7 @@
 
 import { useState, useRef } from 'react'
 import { useMainContext } from '@/contexts/MainContext'
+import Image from 'next/image'
 import ChatEntry from '@/components/ChatEntry'
 import Icon from '@/components/Icon'
 
@@ -30,12 +31,18 @@ export default function Chat() {
 
   return (
     <main className="h-screen flex flex-col pt-navbar-height">
-      {/* Chat messages container */}
-      <div ref={messagesContainerRef} className="flex-1 flex-col p-4 pb-8 overflow-y-auto overflow-x-hidden">
-        {messages.map(message => (
-          <ChatEntry key={message.id} message={message} />
-        ))}
-      </div>
+      {messages.length > 0 ? (
+        <div ref={messagesContainerRef} className="flex-1 flex-col p-4 pb-8 overflow-y-auto overflow-x-hidden">
+          {messages.map(message => (
+            <ChatEntry key={message.id} message={message} />
+          ))}
+        </div>
+      ) : (
+        <div className="flex-1 flex-col flex items-center justify-center gap-8 grayscale">
+          <Image src="/logo.png" alt="Logo" width="100" height="100" />
+          <p className="text-2xl text-gray-300">Start a conversation by typing below!</p>
+        </div>
+      )}
       <div className="h-[120px] p-8 border-t-[1px] border-t-gray-800">
         <form
           onSubmit={submitMessage}
