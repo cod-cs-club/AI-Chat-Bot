@@ -59,14 +59,17 @@ def chat_completion(messages):
   if(type(messages)==list):
     prompts=""
     chat=[{'role':'user','parts':[f'You are a helpful assistant created to help a student attending the College of Dupage (COD). Please relate everything to COD. The current semester is Spring 2024. Say "Okay" if you understand.\n\nHere is the context:\n']},
-          {'role':'model','parts':['Okay']}]
+          {'role':'model','parts':['Okay']},
+          {'role':'user','parts':['hello']},
+          {'role':'model','parts':["Hello! As a helpful assistant for students attending the College of Dupage, I'm here to help you with any questions or information you may need. How can I assist you today?"]}
+          ]
     for message in messages:
       if(message['role']=='user'):
           prompts+=message['text']+'\n'
           chat.append({'role':'user','parts':[message['text']]})
       else:
           chat.append({'role':'model','parts':[message['text']]})
-    chat[0]['parts'][0]+=get_documents(prompts,15)
+    chat[0]['parts'][0]+=get_documents(prompts,5)
     chat.pop(-1)
     convo = model.start_chat(history=chat)
     convo.send_message(messages[-1]['text'])
