@@ -103,10 +103,11 @@ def api_endpoint():
 
     try:
         request_data = request.get_json()
-        return add_cors_headers(jsonify({'message':chat_completion(request_data)})), 200
-
+        return add_cors_headers(jsonify({'message':chat_completion(request_data)})), 200 
     except Exception as e:
         # Handle exceptions if any
+        if('safety_ratings' in str(e)):
+          return add_cors_headers(jsonify({'message':'Explicit content detected.'})), 200
         print(e)
         response = jsonify({"error": f"{e}"})
         return add_cors_headers(response), 500
