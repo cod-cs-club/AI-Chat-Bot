@@ -1,6 +1,7 @@
 'use client'
 
 import { useState, useContext, createContext } from 'react'
+import { getBotMessage } from '@/app/actions'
 import { MessageSender } from '@/lib/enums'
 import type { MessageExchange, MessageContext, BotResponsePayload } from '@/lib/types'
 
@@ -36,16 +37,18 @@ export function MainProvider({ children }: { children: React.ReactNode }) {
       // Add the new user message to the context
       contextMessages.push({ role: MessageSender.User, text: message })
 
-      const response = await fetch('http://127.0.0.1:5000/api', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(contextMessages)
-      })
+      const reply = await getBotMessage(contextMessages)
+
+      // const response = await fetch('http://127.0.0.1:5000/api', {
+      //   method: 'POST',
+      //   headers: { 'Content-Type': 'application/json' },
+      //   body: JSON.stringify(contextMessages)
+      // })
 
       // if (!response.ok) throw new Error('HTTP error! ' + response.status)
 
-      const reply  = await response.json() as BotResponsePayload
-      console.log('response.json() =', reply)
+      // const reply  = await response.json() as BotResponsePayload
+      // console.log('response.json() =', reply)
 
       if (reply.error) throw new Error(reply.error)
       
