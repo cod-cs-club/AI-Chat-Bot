@@ -38,11 +38,11 @@ def get_documents(prompt,number):
     #shape is [[''],[''],['']] converting to ['','','']
     results=collection.query(query_texts=[prompt], n_results=number)
     documents = [item for sublist in results['documents'] for item in sublist]
-    metadatas = [{'url':entry["url"]} for metadata_list in results["metadatas"] for entry in metadata_list]
+    metadatas = [item['url'] for metadata_list in results["metadatas"] for item in metadata_list]
 
     final_context=""
     total_tokens=0
-    for _ in range(documents):
+    for _ in range(len(documents)):
       token_amount=count_tokens(documents[_])
       if(token_amount<=5000 and total_tokens<=20000):
         final_context+='SOURCE:\n'+metadatas[_]+'\n\n'+documents[_]+'\n\n'
