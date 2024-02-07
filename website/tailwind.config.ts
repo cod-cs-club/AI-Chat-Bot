@@ -9,7 +9,7 @@ const config: Config = {
   theme: {
     extend: {
       backgroundImage: {
-        'bg-1': 'url("/bg-1.jpg")',
+        'bg-img1': 'url("/bg-1.jpg")',
       },
       colors: {
         'text-1': 'var(--text-color-1)',
