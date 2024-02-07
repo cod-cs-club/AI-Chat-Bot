@@ -34,16 +34,18 @@ if chromadb_load_boolean:
   cursor.close()
   connection.close()
 
-def get_documents(prompt,results):
+def get_documents(prompt,number):
     #shape is [[''],[''],['']] converting to ['','','']
-    documents = [item for sublist in collection.query(query_texts=[prompt], n_results=results)['documents'] for item in sublist]
+    results=collection.query(query_texts=[prompt], n_results=number)
+    documents = [item for sublist in results['documents'] for item in sublist]
+    metadatas = [{'url':entry["url"]} for metadata_list in results["metadatas"] for entry in metadata_list]
+
     final_context=""
-    
     total_tokens=0
-    for document in documents:
-      token_amount=count_tokens(document)
+    for _ in range(documents):
+      token_amount=count_tokens(documents[_])
       if(token_amount<=5000 and total_tokens<=20000):
-        final_context+=document+'\n\n'
+        final_context+='SOURCE:\n'+metadatas[_]+'\n\n'+documents[_]+'\n\n'
         total_tokens+=token_amount
     return final_context
 
@@ -69,7 +71,7 @@ def chat_completion(messages):
           chat.append({'role':'user','parts':[message['text']]})
       else:
           chat.append({'role':'model','parts':[message['text']]})
-    chat[0]['parts'][0]+=get_documents(prompts,5)
+    chat[0]['parts'][0]+=get_documents(prompts,7)
     chat.pop(-1)
     convo = model.start_chat(history=chat)
     convo.send_message(messages[-1]['text'])

@@ -1,7 +1,6 @@
 transformers
-chromadb
+chromadb==0.3.29
 flask
-transformers
 tensorflow
 google-generativeai
 tiktoken
