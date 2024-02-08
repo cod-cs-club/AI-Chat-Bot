@@ -45,7 +45,7 @@ def get_documents(prompt,number):
     total_tokens=0
     for _ in range(len(documents)):
       token_amount=count_tokens(documents[_])
-      if(token_amount<=5000 and total_tokens<=10000):
+      if(token_amount<=7000 and total_tokens<=10000):
         final_context+='SOURCE:\n'+metadatas[_]+'\n\n'+documents[_]+'\n\n'
         total_tokens+=token_amount
     return final_context
@@ -69,7 +69,7 @@ def chat_completion(messages):
     current_date = datetime.now()
     readable_date = current_date.strftime("%A, %B %d, %Y")
     prompts=""
-    chat=[{'role':'user','parts':[f'You are a helpful, concise assistant created to help a student attending the College of Dupage (COD). Relate all topics to COD. The current semester is Spring 2024, the date is {readable_date}. Make sure dates are accurate. Say "Okay" if you understand.\n\nHere is the context:\n']},
+    chat=[{'role':'user','parts':[f'You are a helpful, concise assistant created to help a student attending the College of Dupage (COD). Relate all topics to COD. The current semester is Spring 2024, the date is {readable_date}. Make sure dates are accurate, and do not include links. Say "Okay" if you understand.\n\nHere is the context:\n']},
           {'role':'model','parts':['Okay']},
           {'role':'user','parts':['hello']},
           {'role':'model','parts':["Hello! As a helpful assistant for students attending the College of Dupage, I'm here to help you with any questions or information you may need. How can I assist you today?"]}
