@@ -6,7 +6,7 @@ import { MessageSender } from '@/lib/enums'
 import type { MessageExchange, MessageContext, BotResponsePayload } from '@/lib/types'
 
 // Main app context, handles bot conversation state
-type MainContextProps = {
+type ContextProps = {
   messages: MessageExchange[],
   sendMessage: (message: string) => Promise<void>
 }
@@ -39,17 +39,6 @@ export function MainProvider({ children }: { children: React.ReactNode }) {
 
       const reply = await getBotMessage(contextMessages)
 
-      // const response = await fetch('http://127.0.0.1:5000/api', {
-      //   method: 'POST',
-      //   headers: { 'Content-Type': 'application/json' },
-      //   body: JSON.stringify(contextMessages)
-      // })
-
-      // if (!response.ok) throw new Error('HTTP error! ' + response.status)
-
-      // const reply  = await response.json() as BotResponsePayload
-      // console.log('response.json() =', reply)
-
       if (reply.error) throw new Error(reply.error)
       
       const botMessage = reply.message
@@ -76,5 +65,5 @@ export function MainProvider({ children }: { children: React.ReactNode }) {
 }
 
 // Create the context and custom hook for it
-export const MainContext = createContext<MainContextProps>(null as any)
+export const MainContext = createContext<ContextProps>(null as any)
 export const useMainContext = () => useContext(MainContext)

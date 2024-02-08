@@ -1,14 +1,14 @@
 'use client'
 
 import Image from 'next/image'
-import Markdown from 'react-markdown'
+import Markdown from '@/components/Markdown'
 import type { MessageExchange } from '@/lib/types'
 
 // Chat Entry: Handles display of both user message and the bot's reply.
 // Also is responsible for fetching the bot's response, and showing errors.
 // You should think of these as tied, because there is only 1 bot reply for each user message.
 export default function ChatEntry({ message }: { message: MessageExchange }) {
-  let botDisplay = <p><Markdown>{message.botMessage}</Markdown></p>
+  let botDisplay: JSX.Element
   if (message.isFetching) botDisplay = (
     <p className="flex items-center gap-2">
       <div className="w-[0.75rem] h-[0.75rem] bg-gray-500 rounded-full loading-dot-1 loading-dot-all"></div>
@@ -16,7 +16,8 @@ export default function ChatEntry({ message }: { message: MessageExchange }) {
       <div className="w-[0.75rem] h-[0.75rem] bg-gray-500 rounded-full loading-dot-3 loading-dot-all"></div>
     </p>
   )
-  if (message.error) botDisplay = <p className="text-red-500">{message.error}</p>
+  else if (message.error) botDisplay = <p className="text-red-500">{message.error}</p>
+  else botDisplay = <Markdown>{message.botMessage || ''}</Markdown>
 
   const dateDisplay = message.time.toLocaleTimeString()
 
