@@ -10,6 +10,8 @@ collection = client.get_or_create_collection(name="collection") #, metadata={"hn
 import tiktoken
 encoding = tiktoken.get_encoding("cl100k_base") #using chatGPT-3.5-turbo's tokenizer for speed, and to avoid Google API rate limit
 def count_tokens(string):
+    print('tiktoken')
+    print(len(encoding.encode(string)))
     return len(encoding.encode(string))
 
 #if the folder is empty...
