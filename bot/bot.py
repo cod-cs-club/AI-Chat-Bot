@@ -44,7 +44,7 @@ def get_documents(prompt,number):
     total_tokens=0
     for _ in range(len(documents)):
       token_amount=count_tokens(documents[_])
-      if(token_amount<=5000 and total_tokens<=20000):
+      if(token_amount<=10000 and total_tokens<=25000):
         final_context+='SOURCE:\n'+metadatas[_]+'\n\n'+documents[_]+'\n\n'
         total_tokens+=token_amount
     return final_context
@@ -59,8 +59,11 @@ model = genai.GenerativeModel('gemini-pro',generation_config=generation_config,)
 
 def chat_completion(messages):
   if(type(messages)==list):
+    from datetime import datetime
+    current_date = datetime.now()
+    readable_date = current_date.strftime("%A, %B %d, %Y")
     prompts=""
-    chat=[{'role':'user','parts':[f'You are a helpful assistant created to help a student attending the College of Dupage (COD). Please relate everything to COD. The current semester is Spring 2024. Say "Okay" if you understand.\n\nHere is the context:\n']},
+    chat=[{'role':'user','parts':[f'You are a helpful assistant created to help a student attending the College of Dupage (COD). Please relate everything to COD. The current semester is Spring 2024, the date is {readable_date}. Say "Okay" if you understand.\n\nHere is the context:\n']},
           {'role':'model','parts':['Okay']},
           {'role':'user','parts':['hello']},
           {'role':'model','parts':["Hello! As a helpful assistant for students attending the College of Dupage, I'm here to help you with any questions or information you may need. How can I assist you today?"]}
@@ -71,7 +74,7 @@ def chat_completion(messages):
           chat.append({'role':'user','parts':[message['text']]})
       else:
           chat.append({'role':'model','parts':[message['text']]})
-    chat[0]['parts'][0]+=get_documents(prompts,7)
+    chat[0]['parts'][0]+=get_documents(prompts,20)
     chat.pop(-1)
     convo = model.start_chat(history=chat)
     convo.send_message(messages[-1]['text'])
