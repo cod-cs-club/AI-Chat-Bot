@@ -45,7 +45,7 @@ def get_documents(prompt,number):
     total_tokens=0
     for _ in range(len(documents)):
       token_amount=count_tokens(documents[_])
-      if(token_amount<=7000 and total_tokens<=10000):
+      if(token_amount<=5000 and total_tokens<=10000):
         final_context+='SOURCE:\n'+metadatas[_]+'\n\n'+documents[_]+'\n\n'
         total_tokens+=token_amount
     print(final_context)
