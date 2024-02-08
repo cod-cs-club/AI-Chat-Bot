@@ -16,7 +16,8 @@
   --bg-color-1: #000000;
   /* CONTAINER COLORS */
   --bg-color-2: #111111; /*  PROMPT CONTAINER (OPACITY 50%) */
-  --chat-color-1: #002502; /* AI BOT CHAT CONTAINER (OPACITY 50%) */
+  --chat-color-1: #2d2d2d; /* AI BOT CHAT CONTAINER (OPACITY 50%) */
+  /* --chat-color-1: #002502; AI BOT CHAT CONTAINER (OPACITY 50%) */
   --chat-color-2: #005E06; /* USER CHAT CONTAINER (OPACITY 50%) */
 
   /* LINER GRADIENTS COLORS | BACKGROUND */

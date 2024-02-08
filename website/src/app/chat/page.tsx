@@ -1,6 +1,6 @@
 'use client'
 
-import { useState, useRef } from 'react'
+import { useState, useRef, useEffect } from 'react'
 import { useMainContext } from '@/contexts/MainContext'
 import Image from 'next/image'
 import ChatEntry from '@/components/ChatEntry'
@@ -19,15 +19,15 @@ export default function Chat() {
     if (!input) return
     sendMessage(input)
     setInput('')
+  }
 
-    // Scroll to bottom of messages container
-    // Wait 100ms to let the DOM update
-    await new Promise(resolve => setTimeout(resolve, 100))
+  // Scroll to bottom of messages container when new messages are added
+  useEffect(() => {
     messagesContainerRef.current?.scrollTo({
       top: messagesContainerRef.current.scrollHeight,
       behavior: 'smooth'
     })
-  }
+  }, [messages])
 
   return (
     <main className="h-screen flex flex-col pt-navbar-height">
