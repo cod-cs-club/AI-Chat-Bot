@@ -6,7 +6,7 @@ import Icon from '@/components/Icon'
 export default function Home() {
   return (
     <main className="h-[100vh] flex flex-col justify-center items-center bg-bg-img1 bg-home-bg bg-blend-darken bg-no-repeat bg-center bg-cover blur-2">
-      <div className="flex items-start gap-4 p-8 bg-gray-950 rounded-lg">
+      <div className="flex flex-wrap items-start gap-4 p-8 bg-gray-950 rounded-lg">
         <div>
           <h2 className="text-5xl font-bold">WELCOME</h2>
           <p className="my-8 text-lg text-text-2">Let me help you in your journey</p>
