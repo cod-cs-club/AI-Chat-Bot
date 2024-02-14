@@ -3,8 +3,8 @@ import re
 import pathlib
 import chromadb
 import os
-chromadb_load_boolean=not os.path.exists(f"{pathlib.Path(__file__).parent.resolve()}\chromadb")
-client = chromadb.PersistentClient(f"{pathlib.Path(__file__).parent.resolve()}\chromadb")
+chromadb_load_boolean=not os.path.exists(f"{pathlib.Path(__file__).parent.resolve()}/chromadb")
+client = chromadb.PersistentClient(f"{pathlib.Path(__file__).parent.resolve()}/chromadb")
 collection = client.get_or_create_collection(name="collection") #, metadata={"hnsw:space": "cosine"}
 
 import tiktoken
