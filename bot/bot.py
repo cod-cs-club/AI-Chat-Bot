@@ -10,6 +10,8 @@ collection = client.get_or_create_collection(name="collection") #, metadata={"hn
 import tiktoken
 encoding = tiktoken.get_encoding("cl100k_base") #using chatGPT-3.5-turbo's tokenizer for speed, and to avoid Google API rate limit
 def count_tokens(string):
+    print('tiktoken')
+    print(len(encoding.encode(string)))
     return len(encoding.encode(string))
 
 #if the folder is empty...
@@ -48,6 +50,8 @@ def get_documents(prompt,number):
       if(token_amount<=5000 and total_tokens<=10000):
         final_context+='SOURCE:\n'+metadatas[_]+'\n\n'+documents[_]+'\n\n'
         total_tokens+=token_amount
+    print('hello:')
+    print(final_context)
     return final_context
 
 # load Google Gemini API key
@@ -69,7 +73,7 @@ def chat_completion(messages):
     current_date = datetime.now()
     readable_date = current_date.strftime("%A, %B %d, %Y")
     prompts=""
-    chat=[{'role':'user','parts':[f'You are a helpful, concise assistant created to help a student attending the College of Dupage (COD). Relate all topics to COD. The current semester is Spring 2024, the date is {readable_date}. Make sure dates are accurate. Say "Okay" if you understand.\n\nHere is the context:\n']},
+    chat=[{'role':'user','parts':[f'You are a helpful, concise assistant created to help a student attending the College of Dupage (COD). Relate all topics to COD. The current semester is Spring 2024, the date is {readable_date}. Make sure dates are accurate, and do not include links. Say "Okay" if you understand.\n\nHere is the context:\n']},
           {'role':'model','parts':['Okay']},
           {'role':'user','parts':['hello']},
           {'role':'model','parts':["Hello! As a helpful assistant for students attending the College of Dupage, I'm here to help you with any questions or information you may need. How can I assist you today?"]}

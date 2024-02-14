@@ -1,5 +1,5 @@
 transformers
-chromadb==0.3.29
+chromadb
 flask
 tensorflow
 google-generativeai
