@@ -40,7 +40,7 @@ export default function Chat() {
       ) : (
         <div className="flex-1 flex-col flex items-center justify-center gap-8 grayscale">
           <Image src="/logo.png" alt="Logo" width="100" height="100" />
-          <p className="text-2xl text-gray-300">Start a conversation by typing below!</p>
+          <p className="text-2xl text-gray-300 text-center">Start a conversation by typing below!</p>
         </div>
       )}
       <div className="h-[120px] p-8 border-t-[1px] border-t-gray-800">

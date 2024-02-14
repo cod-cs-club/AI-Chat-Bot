@@ -6,11 +6,11 @@ import Icon from '@/components/Icon'
 export default function Home() {
   return (
     <main className="h-[100vh] flex flex-col justify-center items-center bg-bg-img1 bg-home-bg bg-blend-darken bg-no-repeat bg-center bg-cover blur-2">
-      <div className="flex flex-wrap items-start gap-4 p-8 bg-gray-950 rounded-lg">
+      <div className="flex flex-wrap items-start justify-center gap-4 px-4 py-8 m-4 bg-gray-950 rounded-lg">
         <div>
           <h2 className="text-5xl font-bold">WELCOME</h2>
           <p className="my-8 text-lg text-text-2">Let me help you in your journey</p>
-          <div className="flex items-center gap-6 mt-4">
+          <div className="w-full flex items-center gap-6 mt-4 justify-center md:justify-start">
             <Link href="/chat" className="flex items-center gap-1 p-2 no-underline font-medium text-lg text-text-1 bg-green-500 rounded-lg">
               <Icon name="chat" />Start
             </Link>

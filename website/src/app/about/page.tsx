@@ -6,9 +6,9 @@ import Icon from '@/components/Icon'
 // About / More Info page
 export default function About() {
   return (
-    <main className="h-screen flex flex-col justify-center items-center pt-navbar-height">
-      <div className="flex flex-col items-center max-w-[800px] mt-8 mb-8 ml-4 mr-4 p-8 bg-gray-900 rounded-md">
-        <h2 className="text-4xl font-bold mb-4">ABOUT THE CHAPGPT PROJECT</h2>
+    <main className="min-h-screen flex flex-col justify-center items-center pt-navbar-height">
+      <div className="flex flex-col items-center max-w-[800px] m-4 p-4 lg:p-8 bg-gray-900 rounded-md">
+        <h2 className="text-4xl text-center font-bold mb-4">ABOUT THE CHAPGPT PROJECT</h2>
         <p className="text-gray-300">ChapGPT is a custom tailored AI chat bot that can help answer all your questions about College of Dupage! We are using the Google Gemini Pro language model, along with a database of all publically available resources on the COD website. This project is a combination of custom made tooling, backend, and frontend components. We hope you enjoy our project!<br /><br /><em>- COD Computer Science Club</em></p>
         <p className="text-xl text-white font-bold mt-6">Project Contributors</p>
         <ul className="list-disc pl-6 text-gray-300">

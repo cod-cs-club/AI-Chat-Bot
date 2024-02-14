@@ -24,8 +24,8 @@ export default function ChatEntry({ message }: { message: MessageExchange }) {
   return (
     <>
       {/* User message */}
-      <div className="flex justify-end ml-[20%]">
-        <div className="flex items-start gap-4 p-4 m-4 bg-chat-2 rounded-2xl chat-user-bubble-appear">
+      <div className="flex justify-end lg:ml-[20%]">
+        <div className="flex items-start gap-2 lg:gap-4 p-4 my-4 mx-0 md:mx-4 bg-chat-2 rounded-2xl chat-user-bubble-appear">
           <div className="flex flex-col gap-4">
             <p>{message.userMessage}</p>
             <p className="text-sm text-text-2">{dateDisplay}</p>
@@ -39,8 +39,8 @@ export default function ChatEntry({ message }: { message: MessageExchange }) {
       </div>
 
       {/* Bot message */}
-      <div className="flex justify-start mr-[20%]">
-        <div className="flex items-start gap-4 p-4 m-4 bg-chat-1 rounded-2xl chat-bot-bubble-appear">
+      <div className="flex justify-start lg:mr-[20%]">
+        <div className="flex items-start gap-2 lg:gap-4 p-4 my-4 mx-0 md:mx-4 bg-chat-1 rounded-2xl chat-bot-bubble-appear">
           <Image
             className="rounded-full"
             src="/logo.png" alt=""
