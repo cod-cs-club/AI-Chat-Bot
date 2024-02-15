@@ -11,7 +11,7 @@ const mainFont = Open_Sans({
 })
 
 export const metadata: Metadata = {
-  title: 'ChatGPT',
+  title: 'Chap-GPT',
   description: 'Get information about College of Dupage with a custom tailored chatbot!',
 }
 
