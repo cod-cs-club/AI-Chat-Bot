@@ -80,7 +80,7 @@ def chat_completion(messages):
           chat.append({'role':'user','parts':[message['text']]})
       else:
           chat.append({'role':'model','parts':[message['text']]})
-    chat[0]['parts'][0]+=replace_multiple_line_breaks(get_documents(prompts,20))
+    chat[0]['parts'][0]+=replace_multiple_line_breaks(get_documents(prompts,7))
     chat.pop(-1)
     convo = model.start_chat(history=chat)
     convo.send_message(messages[-1]['text'])
