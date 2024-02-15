@@ -17,7 +17,7 @@ export default function Navbar() {
   const pathname = usePathname()
 
   return (
-    <header className="fixed z-10 top-0 left-0 w-full h-navbar-height flex justify-between items-center gap-1 py-0 px-4 bg-black-900 overflow-hidden">
+    <header className="fixed z-10 top-0 left-0 w-full h-navbar-height flex justify-between items-center gap-1 py-0 px-4 bg-black-900 overflow-x-auto scrollbar-hide bg-navbar-bg">
       <Link href="/" className="tracking-wide text-2xl font-bold">ChapGPT</Link>
       <nav className="flex items-center h-full">
         {links.map(link => (

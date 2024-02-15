@@ -21,6 +21,8 @@ const config: Config = {
         'chat-2': 'var(--chat-color-2)',
 
         'home-bg': 'rgba(0, 0, 0, 0.6)',
+
+        'navbar-bg': 'rgba(0, 0, 0, 0.5)',
       },
       height: {
         'navbar-height': 'var(--navbar-height)'

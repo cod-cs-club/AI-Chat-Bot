@@ -77,3 +77,13 @@ html, body {
   50% { opacity: 1; scale: 1; }
   100% { opacity: 0.5; scale: 0.75; }
 }
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+/* For IE, Edge and Firefox */
+.scrollbar-hide {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
